@@ -1,3 +1,0 @@
-/home/lsl/Desktop/code/project/mynetlib/build/CMakeFiles/rebuild_cache.dir
-/home/lsl/Desktop/code/project/mynetlib/build/CMakeFiles/edit_cache.dir
-/home/lsl/Desktop/code/project/mynetlib/build/CMakeFiles/mymuduo.dir
