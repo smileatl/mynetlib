@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/HttpServer_test.cc" "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/build/CMakeFiles/httptest.dir/HttpServer_test.o"
-  "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.cc" "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.o"
-  "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.cc" "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.o"
-  "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.cc" "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.o"
+  "/home/lsl/Desktop/code/project/mynetlib/example/http/tests/HttpServer_test.cc" "/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles/httptest.dir/HttpServer_test.o"
+  "/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.cc" "/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o"
+  "/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.cc" "/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o"
+  "/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.cc" "/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

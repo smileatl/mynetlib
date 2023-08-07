@@ -7,19 +7,19 @@
 
 namespace mymuduo
 {
-// static EventLoop* CheckLoopNotNull(EventLoop* loop) {
-//     if (loop == nullptr) {
-//         LOG_FATAL("%s:%s:%d mainLoop is null! \n", __FILE__, __FUNCTION__,
-//                   __LINE__);
-//     }
-//     return loop;
-// }
+static EventLoop* CheckLoopNotNull(EventLoop* loop) {
+    if (loop == nullptr) {
+        LOG_FATAL("%s:%s:%d mainLoop is null! \n", __FILE__, __FUNCTION__,
+                  __LINE__);
+    }
+    return loop;
+}
 
 TcpServer::TcpServer(EventLoop* loop,
                      const InetAddress& listenAddr,
                      const std::string& nameArg,
                      Option option)
-    : loop_(loop),
+    : loop_(CheckLoopNotNull(loop)),
       ipPort_(listenAddr.toIpPort()),
       name_(nameArg),
       acceptor_(new Acceptor(loop, listenAddr, option == kReusePort)),
@@ -36,6 +36,7 @@ TcpServer::TcpServer(EventLoop* loop,
 TcpServer::~TcpServer() {
     for (auto& item : connections_) {
         // 这个局部的shared_ptr智能指针对象，出右中括号（当前代码块），可以自动释放new出来的TcpConnection对象资源了
+        // 下一行reset释放后用不了item.second
         TcpConnectionPtr conn(item.second);
         item.second.reset();
 
@@ -57,6 +58,7 @@ void TcpServer::start() {
         // 把subpool都启动起来
         // threadInitCallback_线程初始化的回调
         threadPool_->start(threadInitCallback_);  // 启动底层的loop线程池
+        // 执行 Acceptor::listen
         loop_->runInLoop(std::bind(&Acceptor::listen, acceptor_.get()));
     }
 }

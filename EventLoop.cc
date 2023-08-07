@@ -10,8 +10,7 @@
 #include <cassert>
 #include <memory>
 
-namespace mymuduo
-{
+namespace mymuduo {
 
 // 防止一个线程创建多个EventLoop
 // __thread: thread_local一个线程只能有一个EventLoop
@@ -22,6 +21,8 @@ const int kPollTimeMs = 10000;
 
 // 创建wakeupfd，用来notify唤醒subReactor处理新来的channel
 int createEventfd() {
+    // EFD_CLOEXEC处理fork()导致的fd泄漏
+    // eventfd 用来创建用于事件 wait / signal 的fd
     // eventfd创建失败，一般不会失败，除非一个进程把文件描述符（Linux一个进程1024个最多）全用光了。
     int evtfd = ::eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC);
     if (evtfd < 0) {
@@ -30,7 +31,8 @@ int createEventfd() {
     return evtfd;
 }
 
-// wakeupFd_(createEventfd())生成一个生成一个eventfd，每个EventLoop对象，都会有自己的eventfd
+// wakeupFd_(createEventfd())：生成一个eventfd，每个EventLoop对象，都会有自己的eventfd
+// threadId_(CurrentThread::tid())：当前lop的线程是构造时的线程
 EventLoop::EventLoop()
     : looping_(false),
       quit_(false),
@@ -52,12 +54,13 @@ EventLoop::EventLoop()
 
     // 设置wakeupfd的事件类型以及发生事件后的回调操作
     wakeupChannel_->setReadCallback(std::bind(&EventLoop::handleRead, this));
-    // 每一个eventloop都将监听wakeupchannel的EPOLLIN读事件了
+    // 每一个eventloop都将监听wakeupchannel_的EPOLLIN读事件了
+    // 等待被唤醒
     wakeupChannel_->enableReading();
 }
 
 EventLoop::~EventLoop() {
-    wakeupChannel_->disableAll();
+    wakeupChannel_->disableAll(); // 对所有事件都不敢兴趣
     wakeupChannel_->remove();
     ::close(wakeupFd_);
     t_loopInThisThread = nullptr;
@@ -73,7 +76,7 @@ void EventLoop::loop() {
 
     while (!quit_) {
         activeChannels_.clear();
-        // 监听两类fd，一种是client的fd，一种wakeupfd
+        // 监听两类fd，一种是client的fd，一种wakeupfd(mainReactor和subReactor通信用)
         // 此时activeChannels_已经填好了事件发生的channel
         pollReturnTime_ = poller_->poll(kPollTimeMs, &activeChannels_);
         eventHandling_ = true;
@@ -87,9 +90,9 @@ void EventLoop::loop() {
         // 执行当前EventLoop事件循环需要处理的回调操作
         /**
          * mainloop只做accept
-         * IO线程 mainLoop accept fd《=channel subloop
+         * IO线程 mainLoop accept fd 然后将连接fd对应的channel传递到 subloop
          * mainLoop 事先注册一个回调cb（需要subloop来执行）
-         * wakeup subloop后，执行下面的方法，执行之前mainloop注册的cb操作
+         * 通过 wakeupChannel_唤醒 subloop后，执行下面的方法，执行之前mainloop注册的cb操作
          */
         doPendingFunctors();
     }
@@ -110,7 +113,7 @@ void EventLoop::quit() {
     quit_ = true;
 
     // 如果是在其他线程中，调用的quit
-    // 在一个subloop(woker)中，调用了mainloop(IO)的quit
+    // 场景如：在一个subloop(woker)中，调用了mainloop(IO)的quit
     if (!isInLoopThread()) {
         // 退出其他的loop，需要先把该loop唤醒，再quit
         wakeup();
@@ -130,18 +133,19 @@ void EventLoop::runInLoop(Functor cb) {
 void EventLoop::queueInLoop(Functor cb) {
     {
         std::unique_lock<std::mutex> lock(mutex_);
+        // emplace_back减少拷贝开销
         pendingFunctors_.emplace_back(std::move(cb));
     }
 
     // 唤醒相应的线程，需要执行上面回调操作的loop的线程了
     // ||callingPendingFunctors_的意思是：当前loop正在执行回调，但是loop又有了新的回调，继续唤醒执行新的回调
     if (!isInLoopThread() || callingPendingFunctors_) {
-        wakeup();  // 唤醒loop所在线程
+        wakeup();  // 唤醒loop所在线程，使得下一次epoll_wait检测到Channel事件到来
     }
 }
 
-// 用来唤醒loop所在的线程的
-// 向wakeupfd_写一个数据，wakeupChannel就发生读事件，当前loop线程就会被唤醒
+// 用来唤醒loop所在的线程的，向wakeupfd_写一个数据（8 bytes）
+// wakeupChannel就发生读事件，当前loop线程就会被唤醒
 void EventLoop::wakeup() {
     uint64_t one = 1;
     ssize_t n = write(wakeupFd_, &one, sizeof one);
@@ -150,7 +154,7 @@ void EventLoop::wakeup() {
     }
 }
 
-// EventLoop的方法 =》 Poller的方法
+// EventLoop的方法，转调用Poller对应的方法
 // 这些本来是channel向poller问的，但是channel跟poller无法直接沟通
 // 那么channel根据EventLoop跟poller沟通
 void EventLoop::updateChannel(Channel* channel) {
@@ -183,6 +187,7 @@ void EventLoop::doPendingFunctors() {
 
     {
         std::unique_lock<std::mutex> lock(mutex_);
+        // 使得EventLoop::queueInLoop中往 pendingFunctors_ 加入回调不用等待这一批回调执行完就可加入，提高并发性
         // 相当于把pendingFunctors_解放了
         // 还没执行完当前这个loop执行的回调，
         // 也不妨碍mainloop向当前这个loop写回调
@@ -197,5 +202,4 @@ void EventLoop::doPendingFunctors() {
     callingPendingFunctors_ = false;
 }
 
-
-}
+}  // namespace mymuduo

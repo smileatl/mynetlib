@@ -5,6 +5,7 @@
 
 namespace mymuduo
 {
+// 原子变量初始化最好要这么写，不要写成 = 0，会报错，因为拷贝赋值被deleted
 // 类的静态成员变量需要在类外单独初始化
 // ()标准的指定构造函数
 std::atomic_int Thread::numCreated_(0);

@@ -10,6 +10,7 @@ class InetAddress;
 // 封装socket fd
 class Socket : noncopyable {
 public:
+    // 防止隐式转换产生临时对象
     explicit Socket(int sockfd) : sockfd_(sockfd) {}
 
     ~Socket();

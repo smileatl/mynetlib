@@ -28,6 +28,7 @@ class Socket;
  * =》 TcpConnection 设置回调 =》 Channel =》 Poller =》 Channel的回调操作
  *
  */
+// 对成功与服务器建立连接所得的connfd的封装
 class TcpConnection : noncopyable,
                       public std::enable_shared_from_this<TcpConnection> {
 public:
@@ -40,6 +41,7 @@ public:
     ~TcpConnection();
 
     EventLoop* getLoop() const { return loop_; }
+    // getLoopName
     const std::string& name() const { return name_; }
     const InetAddress& localAddress() const { return localAddr_; }
     const InetAddress& peerAddress() const { return peerAddr_; }

@@ -71,13 +71,16 @@ private:
     std::atomic_bool quit_;     // 标识退出loop循环
     std::atomic_bool eventHandling_;    // 表示是否在处理事件
 
-    const pid_t threadId_;  // 记录当前loop所在线程的id
+    // 调用某个loop对象的线程未必是进行loop操作的线程
+    // 记录当前EventLoop进行loop操作所在线程的tid，确保Channel回调在其对应的evnetloop中执行 
+    const pid_t threadId_; 
 
     Timestamp pollReturnTime_;  // poller返回发生事件的channels的时间点
     std::unique_ptr<Poller> poller_;
 
     // 用了eventfd
     int wakeupFd_;  // 主要作用，当mainLoop获取一个新用户的channel，通过轮询算法选择一个subloop，通过该成员唤醒subloop处理channel
+    // 别的线程唤醒本loop线程使用的Channel
     std::unique_ptr<Channel> wakeupChannel_;
 
     std::any context_;
@@ -88,7 +91,7 @@ private:
     std::atomic_bool
         callingPendingFunctors_;  // 标识当前loop是否有需要执行的回调操作
     std::vector<Functor> pendingFunctors_;  // 存储loop需要执行的所有的回调操作
-    std::mutex mutex_;  // 互斥锁，用来保护上面vector容器的线程安全操作  
+    std::mutex mutex_;  // 互斥锁，用来保护上面vector容器的线程安全操作（保护 pendingFunctors_ 线程安全操作）
 };
 
 

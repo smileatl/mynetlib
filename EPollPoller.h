@@ -35,14 +35,15 @@ public:
 
 
 private:
+    // 事件链表初始大小
     static const int kInitEventListSize = 16;
 
     // 填写活跃的channel在activeChannel(ChannelList)里边
     void fillActiveChannels(int numEvents, ChannelList *activeChannels) const;
-    // 更新channel通道
+    // 更新channel通道对应的socket的感兴趣的时间
     void update(int operation, Channel *channel);
 
-    // 事件集合
+    // 事件集合，用vector方便扩容
     using EventList=std::vector<epoll_event>;
 
     // create创建时的fd，释放的时候再释放掉

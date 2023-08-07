@@ -30,7 +30,7 @@ public:
     using EventCallback = std::function<void()>;
     using ReadEventCallback = std::function<void(Timestamp)>;
 
-    Channel(EventLoop* looP, int fd);
+    Channel(EventLoop* loop, int fd);
     ~Channel();
 
     // fd得到poller通知以后，处理事件的。就是调用相应的回调方法
@@ -56,6 +56,7 @@ public:
 
     // 设置fd相应的事件状态
     // 相应的readevent置位
+    // update()底层也是调用epoll_ctl
     void enableReading() {
         events_ |= kReadEvent;
         update();
@@ -89,6 +90,7 @@ public:
     void set_index(int idx) { index_ = idx; }
 
     // one loop per thread
+    // 当前Channel所属的eventloop
     EventLoop* ownerLoop() {return loop_;}
     void remove();
 
@@ -97,23 +99,26 @@ private:
     // 用于处理事件，并提供异常保护
     void handleEventWithGuard(Timestamp receiveTime);
 
-    static const int kNoneEvent; // 无事件
+    // 感兴趣的事件类型，该变量表示不感兴趣任何事件
+    static const int kNoneEvent; 
     static const int kReadEvent;
     static const int kWriteEvent;
 
     EventLoop* loop_;  // 事件循环
-    const int fd_;     // fd, Poller监听的对象  epoll_ctrl
+    const int fd_;     // fd, Poller监听的对象，epoll_ctrl
     int events_;       // 注册fd感兴趣的事件
     int revents_;      // poller返回的具体发生的事件
-    int index_; 
+    int index_;        // 表示Channel在Poller上的状态
 
     bool eventHandling_; //标志着是否正在处理事件，防止析构一个正在处理事件的Channel
     bool addedToLoop_;  // 标志着Channel是否在Loop的ChannelLists，也即是否被添加
 
+    // 用于观察shared_ptr的状态
+    bool tied_;
     std::weak_ptr<void> tie_; // removeChannel时使用
-    bool tied_; 
 
-    // 因为channel通道里面能够获知fd最终发生的具体的事件revents，所以它负责调用具体事件的回调操作
+    // 因为channel通道里面能够获知fd最终发生的具体的事件revents，
+    // 所以它负责调用具体事件的回调操作
     ReadEventCallback readCallback_;
     EventCallback writeCallback_;
     EventCallback closeCallback_;

@@ -30,14 +30,16 @@ ssize_t Buffer::readFd(int fd, int* saveErrno) {
     vec[1].iov_base = extrabuf;
     vec[1].iov_len = sizeof extrabuf;
 
+    // writable < sizeof extrabuf 表示底层可写的缓冲区空间不够大，用两块
     const int iovcnt = (writable < sizeof extrabuf) ? 2 : 1;
     // 数组名vec本身就是地址
-    // readv可以从文件描述符fd中读取数据到多个缓冲区中
+    // readv可以从文件描述符fd中读取数据到多个缓冲区中，分散读
     const ssize_t n = ::readv(fd, vec, iovcnt);
     if (n < 0) {
         *saveErrno = errno;
     } else if (n <= writable)  // Buffer的可写缓冲区已经够存储读出来的数据了
     {
+        // 读数据writerIndex_后移
         writerIndex_ += n;
     } else {
         // Buffer空间不够存，需要把溢出的部分（extrabuf）倒到Buffer中（会先触发扩容机制）
@@ -51,7 +53,9 @@ ssize_t Buffer::readFd(int fd, int* saveErrno) {
     return n;
 }
 
+// 通过fd发送数据
 ssize_t Buffer::writeFd(int fd, int* saveErrno) {
+    // 可读的数据通过fd发出去
     ssize_t n = ::write(fd, peek(), readableBytes());
     if (n < 0) {
         // 出错了返回errno

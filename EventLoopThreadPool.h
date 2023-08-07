@@ -23,6 +23,7 @@ public:
         numThreads_=numThreads;
     }
 
+    // ???谁来调用传入cb
     void start(const ThreadInitCallback &cb=ThreadInitCallback());
 
     // 如果工作在多线程中，baseLoop_默认以轮询的方式分配channel给subloop
@@ -39,7 +40,7 @@ private:
     std::string name_;
     bool started_;
     int numThreads_;
-    int next_; //做下一个loop的下表用的；
+    int next_; //做下一个loop的下标用的，就是轮询用的小包；
     // 包含所有创建的事件的线程
     std::vector<std::unique_ptr<EventLoopThread>> threads_;
     // 包含事件线程里，所有EventLoop的指针

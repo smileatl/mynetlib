@@ -4,9 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace mymuduo
-{
-
+namespace mymuduo {
 
 /// A buffer class modeled after org.jboss.netty.buffer.ChannelBuffer
 ///
@@ -48,9 +46,9 @@ public:
     // onMessage string <- Buffer
     void retrieve(size_t len) {
         if (len < readableBytes()) {
-            readerIndex_ +=
-                len;  // 应用只读取了刻度缓冲区数据的一部分，就是len，还剩下readerIndex_
-                      // += len -> writerIndex_有数据没读
+            // 应用只读取了刻度缓冲区数据的一部分，就是len，还剩下
+            // readerIndex_+=len -> writerIndex_有数据没读
+            readerIndex_ += len;
         } else {
             // len==readableBytes
             retrieveAll();
@@ -63,6 +61,7 @@ public:
     }
 
     // 把onMessage函数上报的Buffer数据，转成string类型的数据返回
+    // 取出所有 readable 的数据转换为string返回
     std::string retrieveAllAsString() {
         return retrieveAsString(readableBytes());  // 应用可读取数据的长度
     }
@@ -71,11 +70,13 @@ public:
         // 构造了一个result
         std::string result(peek(), len);  // 应用可读取数据的长度
 
+        // 读完缓冲区各个指针要置位
         retrieve(
             len);  // 上面一句把缓冲区中可读的数据，已经读取出来，这里肯定要对缓冲区进行复位操作
         return result;
     }
 
+    // 确保有长度为len的写缓冲区可用
     // buffer_.size() - writerIndex_    len
     void ensureWriteableBytes(size_t len) {
         if (writableBytes() < len) {
@@ -91,6 +92,7 @@ public:
         ensureWriteableBytes(len);
         // 把要添加的数据拷贝到可写的缓冲区里面
         std::copy(data, data + len, beginWrite());
+        // 移动缓冲区可写的起始位置
         writerIndex_ += len;
     }
 
@@ -128,12 +130,14 @@ private:
     char* begin() {
         // it.operator*()
         // 解引用后取地址
-        return &*buffer_
-                     .begin();  // vector底层数组首元素的地址，也就是数组的起始地址
+        // vector底层数组首元素的地址，也就是数组的起始地址
+        // 也可以用buffer_.data()
+        return &*buffer_.begin();
     }
 
     const char* begin() const { return &*buffer_.begin(); }
 
+    // 扩充写缓冲区空间
     void makeSpace(size_t len) {
         // 所有剩下可写的还是不够
         if (writableBytes() + prependableBytes() < len + kCheapPrepend) {
@@ -152,10 +156,11 @@ private:
     }
 
     std::vector<char> buffer_;
-    size_t readerIndex_;
-    size_t writerIndex_;
+    // 注意：读写缓冲区都有可读和可写起始位置！！！
+    size_t readerIndex_;  // 可读数据起始位置
+    size_t writerIndex_;  // 可写入起始位置
 
     static const char kCRLF[];
 };
 
-}
+}  // namespace mymuduo

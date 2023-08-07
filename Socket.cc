@@ -8,8 +8,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-namespace mymuduo
-{
+namespace mymuduo {
 
 Socket::~Socket() {
     close(sockfd_);
@@ -23,6 +22,7 @@ void Socket::bindAddress(const InetAddress& localaddr) {
 }
 
 void Socket::listen() {
+    // 第二个参数是accept队列大小
     if (0 != ::listen(sockfd_, 1024)) {
         LOG_FATAL("listen sockfd:%d fail \n", sockfd_);
     }
@@ -41,13 +41,11 @@ int Socket::accept(InetAddress* peeraddr) {
     int connfd = ::accept4(sockfd_, (sockaddr*)&addr, &len,
                            SOCK_NONBLOCK | SOCK_CLOEXEC);
     if (connfd >= 0) {
-        peeraddr->setSockAddr(addr);
-    }
-    else
-    {
+        peeraddr->setSockAddr(addr);  // 通过输出参数传出连接到的对端的地址
+    } else {
         LOG_FATAL("Socket accept sockfd error! errno=%d\n", errno);
     }
-    
+
     return connfd;
 }
 
@@ -77,4 +75,4 @@ void Socket::setKeepAlive(bool on) {
     ::setsockopt(sockfd_, SOL_SOCKET, SO_KEEPALIVE, &optval, sizeof optval);
 }
 
-}
+}  // namespace mymuduo

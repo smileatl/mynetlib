@@ -8,8 +8,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-namespace mymuduo
-{
+namespace mymuduo {
 
 static int createNonblocking() {
     int sockfd = ::socket(AF_INET, SOCK_STREAM | SOCK_NONBLOCK | SOCK_CLOEXEC,
@@ -40,12 +39,14 @@ Acceptor::Acceptor(EventLoop* loop,
 }
 
 Acceptor::~Acceptor() {
+    // 不关注fd上任何事件
     acceptChannel_.disableAll();
     acceptChannel_.remove();
     ::close(idleFd_);
     // acceptSocket RAII 自己会析构
 }
 
+// 由TcpServer::start()调用
 void Acceptor::listen() {
     listenning_ = true;
     // listen
@@ -55,8 +56,8 @@ void Acceptor::listen() {
 }
 
 // listenfd有事件发生了，就是有新用户连接了
-// 接受新连接，并且以负载均衡的选择方式选择一个sub
-// EventLoop，并把这个新连接分发到这个subEventLoop上。
+// 接受新连接，并且以负载均衡的选择方式选择一个subEventLoop，
+// 并把这个新连接分发到这个subEventLoop上。
 void Acceptor::handleRead() {
     InetAddress peerAddr;
     int connfd = acceptSocket_.accept(&peerAddr);
@@ -88,5 +89,4 @@ void Acceptor::handleRead() {
     }
 }
 
-}
-
+}  // namespace mymuduo

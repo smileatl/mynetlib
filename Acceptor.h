@@ -32,6 +32,10 @@ private:
     void handleRead();
 
     EventLoop *loop_; // Acceptor用的就是用户定义的那个baseLoop，也称作mainLoop
+
+    // 创建普通成员必须引入头文件了
+    // 否则会提示不完整的类型
+    // 如果是指针或引用成员，可以只加入类的前置声明，在源文件中进行包含头文件
     Socket acceptSocket_; //它负责监听的就是acceptSocket_上的事件
     Channel acceptChannel_; //将acceptSocket_封装成acceptChannel_
 

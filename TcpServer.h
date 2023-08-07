@@ -23,6 +23,7 @@ namespace mymuduo
 {
 
 // 对外的服务器编程使用的类
+// 在这个类对象里设置连接的事件回调操作
 class TcpServer : noncopyable {
 public:
     using ThreadInitCallback = std::function<void(EventLoop*)>;
@@ -63,6 +64,7 @@ public:
 
 private:
     void newConnection(int sockfd, const InetAddress& peerAddr);
+    // 在map中移除TcpConnection
     void removeConnection(const TcpConnectionPtr& conn);
     void removeConnectionInLoop(const TcpConnectionPtr& conn);
 

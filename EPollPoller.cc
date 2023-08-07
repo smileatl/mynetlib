@@ -12,11 +12,11 @@ namespace mymuduo
 {
 
 // index_表示channel在poller中的状态
-// channel未添加到poller中
+// channel未添加到poller的ChannelMap中
 const int kNew = -1;  // channel的成员index_ = -1
-// channel已添加到poller中
+// channel已添加到poller的事件监视中，即上epoll树监视了
 const int kAdded = 1;
-// channel从poller中删除
+// channel从poller中的监视列表中删除，没有从Poller的ChannelMap中删除，也还在eventLoop的ChannelList中
 const int kDeleted = 2;
 
 EPollPoller::EPollPoller(EventLoop* loop)
@@ -48,8 +48,10 @@ Timestamp EPollPoller::poll(int timeoutMs, ChannelList* activeChannels) {
     if (numEvents > 0) {
         // 发生事件的个数
         LOG_INFO("%d events happened \n", numEvents);
+        // 将活跃(有事件发生的)Channel添加到所属eventloop中的ChannelList中
         fillActiveChannels(numEvents, activeChannels);
         if (numEvents == events_.size()) {
+            // 若发生事件数 == 事件数组(events_)容量, 则2倍扩容
             events_.resize(events_.size() * 2);
         }
     } else if (numEvents == 0) {
@@ -68,7 +70,7 @@ Timestamp EPollPoller::poll(int timeoutMs, ChannelList* activeChannels) {
 // updateChannel removeChannel
 /**
  *              EventLoop  =>
- * poller.poll通过epoll_wait把真正发生事件的channel，通过形参填充到EventLoop提供的实参里
+ * poller.poll通过epoll_wait把真正发生事件的channel，通过形参填充到EventLoop提供的实参里（ChannelList在EventLoop里面）
  *     ChannelList      Poller(是通过其抽象基类表示的)
  *                     ChannelMap  <fd, channel*>   epollfd
  *                  向poller里注册过的，对ChannelMap[epollfd]操作
@@ -84,11 +86,13 @@ void EPollPoller::updateChannel(Channel* channel) {
     if (index == kNew || index == kDeleted) {
         if (index == kNew) {
             // 把fd相关的事件进行更改
+            // 加入Poller的 ChannelMap<int, Channel *>
             int fd = channel->fd();
             channels_[fd] = channel;
         }
         // 设置index为已添加
         channel->set_index(kAdded);
+        // 将channel对应的fd和感兴趣的事件添加到EPOLL的监视列表
         // 然后注册到poller里面
         update(EPOLL_CTL_ADD, channel);
     } else  // channel已经在poller上注册过了

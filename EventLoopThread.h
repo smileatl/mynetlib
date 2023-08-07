@@ -18,12 +18,14 @@ class EventLoopThread : noncopyable
 public:
     using ThreadInitCallback = std::function<void(EventLoop*)>; 
 
+    // 这个类对象是由 EventLoopThread::start() 创建
     EventLoopThread(const ThreadInitCallback &cb = ThreadInitCallback(), 
         const std::string &name = std::string());
     ~EventLoopThread();
 
     EventLoop* startLoop();
 private:
+    // 线程的执行函数
     void threadFunc();
 
     EventLoop *loop_;
@@ -31,6 +33,7 @@ private:
     Thread thread_;
     std::mutex mutex_;
     std::condition_variable cond_;
+    // 用于线程初始化的回调
     ThreadInitCallback callback_;
 };
 }

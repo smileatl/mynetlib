@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests
+CMAKE_SOURCE_DIR = /home/lsl/Desktop/code/project/mynetlib/example/http/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/build
+CMAKE_BINARY_DIR = /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/build/CMakeFiles /home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/tests/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -139,49 +139,49 @@ HttpServer_test.s:
 .PHONY : HttpServer_test.s
 
 # target to build an object file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.o:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.o
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.o
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o
 
 # target to preprocess a source file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.i:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.i
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.i
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.i:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.i
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.i
 
 # target to generate assembly for a file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.s:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.s
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.s
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.s:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.s
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.s
 
 # target to build an object file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.o:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.o
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.o
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o
 
 # target to preprocess a source file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.i:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.i
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.i
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.i:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.i
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.i
 
 # target to generate assembly for a file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.s:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.s
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.s
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.s:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.s
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.s
 
 # target to build an object file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.o:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.o
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.o
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o
 
 # target to preprocess a source file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.i:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.i
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.i
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.i:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.i
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.i
 
 # target to generate assembly for a file
-home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.s:
-	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.s
-.PHONY : home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.s
+home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.s:
+	$(MAKE) -f CMakeFiles/httptest.dir/build.make CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.s
+.PHONY : home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.s
 
 # Help Target
 help:
@@ -195,15 +195,15 @@ help:
 	@echo "... HttpServer_test.o"
 	@echo "... HttpServer_test.i"
 	@echo "... HttpServer_test.s"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.o"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.i"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpContext.s"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.o"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.i"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpResponse.s"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.o"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.i"
-	@echo "... home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http/HttpServer.s"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.i"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.s"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.i"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.s"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.i"
+	@echo "... home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.s"
 .PHONY : help
 
 

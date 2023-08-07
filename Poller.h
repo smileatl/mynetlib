@@ -28,7 +28,7 @@ public:
 
     // 纯虚函数，抽象类不能实例
     // 给所有IO复用保留统一的接口,需要它们去重写的;
-    //当前激活的channel，运行的channel，需要Poller去照顾的channel都在ChannelList里边;
+    // 当前激活的channel，运行的channel，需要Poller去照顾的channel都在ChannelList里边;
     virtual Timestamp poll(int timeouts, ChannelList *activeChannels)=0;
     virtual void updateChannel(Channel *channel)=0;
     virtual void removeChannel(Channel *channel)=0;
@@ -37,6 +37,7 @@ public:
     bool hasChannel(Channel *channel) const;
 
     // EventLoop可以通过该接口获取默认的IO复用的具体实现
+    // 但注意实现不在Poller.cc中，依赖倒置，在DefaultPoller.cc里面
     static Poller* newDefaultPoller(EventLoop *loop);
 
 protected:

@@ -12,8 +12,7 @@
 #include <functional>
 #include <string>
 
-namespace mymuduo
-{
+namespace mymuduo {
 // 写个静态的，不会因为编译名字冲突
 static EventLoop* CheckLoopNotNull(EventLoop* loop) {
     if (loop == nullptr) {
@@ -45,7 +44,7 @@ TcpConnection::TcpConnection(EventLoop* loop,
     channel_->setWriteCallback(std::bind(&TcpConnection::handleWrite, this));
     channel_->setCloseCallback(std::bind(&TcpConnection::handleClose, this));
     channel_->setErrorCallback(std::bind(&TcpConnection::handleError, this));
-    
+
     // c字符串
     LOG_INFO("TcpConnection::ctor[%s] at fd=%d\n", name_.c_str(), sockfd);
     // 启动tcpserver的保护机制
@@ -135,6 +134,7 @@ void TcpConnection::send(const std::string& buf) {
         if (loop_->isInLoopThread()) {
             sendInLoop(buf.c_str(), buf.size());
         } else {
+            // 唤醒Loop所属线程执行send
             loop_->runInLoop(std::bind(&TcpConnection::sendInLoop, this,
                                        buf.c_str(), buf.size()));
         }
@@ -142,12 +142,12 @@ void TcpConnection::send(const std::string& buf) {
 }
 
 /**
- * 发送数据  应用写的快， 而内核发送数据慢， 需要把待发送数据写入缓冲区，
+ * 发送数据时，若应用写的快，而内核发送数据慢，需要把待发送数据写入缓冲区，
  * 而且设置了水位回调
  */
 void TcpConnection::sendInLoop(const void* data, size_t len) {
     ssize_t nwrote = 0;
-    size_t remaining = len;
+    size_t remaining = len;  // 每一次写后，剩余没写的数据量
     bool faultError = false;
 
     // 之前调用过该connection的shutdown，不能再进行发送了
@@ -156,7 +156,9 @@ void TcpConnection::sendInLoop(const void* data, size_t len) {
         return;
     }
 
-    // 表示channel_第一次开始写数据，而且缓冲区没有待发送数据
+    // !!if no thing in output queue, try writing directly
+    // 表示channel_第一次开始写数据， 且缓冲区无待发数据,则可以直接发data数据
+    // 否则要将数据加入到 outputBuffer_ 后发送
     if (!channel_->isWriting() && outputBuffer_.readableBytes() == 0) {
         // 那就开始发送
         nwrote = ::write(channel_->fd(), data, len);
@@ -170,6 +172,7 @@ void TcpConnection::sendInLoop(const void* data, size_t len) {
         } else {
             // nwrote < 0
             nwrote = 0;
+            // EWOULDBLOCK没有数据的正常返回
             if (errno != EWOULDBLOCK) {
                 LOG_ERROR("TcpConnection::sendInLoop");
                 if (errno == EPIPE || errno == ECONNRESET)  // SIGPIPE  RESET
@@ -182,11 +185,12 @@ void TcpConnection::sendInLoop(const void* data, size_t len) {
     }
 
     // 说明当前这一次write，并没有把数据全部发送出去，剩余的数据需要保存到缓冲区当中，然后给channel
-    // 注册epollout事件，poller发现tcp的发送缓冲区有空间，会通知相应的sock-channel，调用Channel::writeCallback_回调方法
+    // 注册epollout事件，poller发现tcp的发送缓冲区有内容可发，会通知相应的sock-channel，调用Channel::writeCallback_回调方法
     // 也就是调用TcpConnection::handleWrite方法，把发送缓冲区中的数据全部发送完成
     if (!faultError && remaining > 0) {
         // 目前发送缓冲区剩余的待发送数据的长度
         size_t oldLen = outputBuffer_.readableBytes();
+        // 上一次若已经超过高水位，不需要调用回调
         if (oldLen + remaining >= highWaterMark_ && oldLen < highWaterMark_ &&
             highWaterMark_) {
             loop_->queueInLoop(std::bind(highWaterMarkCallback_,
@@ -209,12 +213,13 @@ void TcpConnection::shutdown() {
     }
 }
 
-void TcpConnection::setTcpNoDelay(bool on)
-{
+void TcpConnection::setTcpNoDelay(bool on) {
     socket_->setTcpNoDelay(on);
 }
 
 void TcpConnection::shutdownInLoop() {
+    // 保证优雅关闭，发完数据才关闭
+    // 不关注channel_的写事件了，表明outputBuffer中数据已全部发送完成
     if (!channel_->isWriting()) {
         // 说明outputBuffer中的数据已经全部发送完成
         socket_->shutdownWrite();  // 关闭写端
@@ -226,24 +231,22 @@ void TcpConnection::shutdownInLoop() {
 // channel、socket、acceptor是不会直接给到用户手里的
 void TcpConnection::connectEstablished() {
     setState(kConnected);
+    // 检测Channel对应的TcpConnection的生命期
+    // 防止对应的Channel在销毁后仍被调用其回调
     channel_->tie(shared_from_this());
     channel_->enableReading();  // 向poller注册channel的epollin事件
 
     // 新连接建立，执行回调
-    connectionCallback_(shared_from_this());
+    connectionCallback_(shared_from_this());  // 用户定义的函数
 }
 // 连接销毁
 void TcpConnection::connectDestroyed() {
     if (state_ == kConnected) {
         setState(kDisconnected);
         channel_->disableAll();  // 把channel的所有感兴趣的事件，从poller中del掉
-        connectionCallback_(shared_from_this());
+        connectionCallback_(shared_from_this()); //用户设置的回调
     }
-    channel_->remove();  // 把channel从poller中删除掉
+    channel_->remove();  // 把channel从poller中删除掉（从map中删掉）
 }
 
-}
-
-
-
-
+}  // namespace mymuduo

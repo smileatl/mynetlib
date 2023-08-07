@@ -27,8 +27,10 @@ EventLoop* EventLoopThread::startLoop() {
 
     EventLoop* loop = nullptr;
     {
+        
         std::unique_lock<std::mutex> lock(mutex_);
-        while (loop_ == nullptr) {
+        // 用while防止被其他线程抢走了，确保资源存在
+        while (loop_ == nullptr) { // 等待对应的 EventLoop创建
             cond_.wait(lock);
         }
         loop = loop_;
@@ -36,10 +38,12 @@ EventLoop* EventLoopThread::startLoop() {
     return loop;
 }
 
-// 下面这个方法，实在单独的新线程里面运行的
+// 下面这个方法，是在单独的新线程里面运行的，即thread_.start()内的func()
 // 这才是真真正正执行的线程
 void EventLoopThread::threadFunc() {
-    EventLoop loop;  // 创建了一个独立的eventloop，和上面的线程是一一对应的，one loop per thread
+    // 创建了一个独立的eventloop，和上面的线程是一一对应的，one loop per thread
+    // 栈上分配
+    EventLoop loop;  
 
     if (callback_) {
         callback_(&loop);
@@ -52,6 +56,7 @@ void EventLoopThread::threadFunc() {
     }
 
     loop.loop();  // EventLoop loop  => Poller.poll
+    // 创建了一个独立的eventloop，和上面的线程是一一对应的，one loop per thread 
     // 同样用锁进行了保护
     std::unique_lock<std::mutex> lock(mutex_);
     loop_ = nullptr;
