@@ -1,9 +1,9 @@
 #pragma once
 
-#include <mymuduo/TcpServer.h>
-#include <mymuduo/noncopyable.h>
+#include <mynetlib/TcpServer.h>
+#include <mynetlib/noncopyable.h>
 
-using namespace mymuduo;
+using namespace mynetlib;
 
 
 class HttpRequest;
@@ -30,7 +30,7 @@ public:
 private:
     void onConnection(const TcpConnectionPtr& conn);
     void onMessage(const TcpConnectionPtr& conn,
-                   mymuduo::Buffer* buf,
+                   mynetlib::Buffer* buf,
                    Timestamp receiveTime);
     void onRequest(const TcpConnectionPtr&, const HttpRequest&);
 

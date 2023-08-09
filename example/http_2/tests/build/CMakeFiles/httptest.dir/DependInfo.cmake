@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/tests/HttpServer_test.cc" "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/tests/build/CMakeFiles/httptest.dir/HttpServer_test.o"
-  "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/HttpContext.cc" "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/HttpContext.o"
-  "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/HttpResponse.cc" "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/HttpResponse.o"
-  "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/HttpServer.cc" "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/HttpServer.o"
+  "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/HttpServer_test.cc" "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/build/CMakeFiles/httptest.dir/HttpServer_test.o"
+  "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/HttpContext.cc" "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/HttpContext.o"
+  "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/HttpResponse.cc" "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/HttpResponse.o"
+  "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/HttpServer.cc" "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/build/CMakeFiles/httptest.dir/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/HttpServer.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

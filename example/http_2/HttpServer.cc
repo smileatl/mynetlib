@@ -1,13 +1,13 @@
 
 #include "HttpServer.h"
 
-#include <mymuduo/Logger.h>
+#include <mynetlib/Logger.h>
 // #include "muduo/net/http/HttpContext.h"
 #include "HttpContext.h"
 #include "HttpRequest.h"
 #include "HttpResponse.h"
 
-using namespace mymuduo;
+using namespace mynetlib;
 
 // 这个回调函数可以用于处理 HTTP
 // 请求的默认情况，当服务器无法找到对应的资源时，可以返回一个 404
@@ -63,7 +63,7 @@ void HttpServer::onConnection(const TcpConnectionPtr& conn) {
 
 // 这个函数一般在接收到客户端发送的数据后被调用，用于解析和处理 HTTP 请求。
 void HttpServer::onMessage(const TcpConnectionPtr& conn,
-                           mymuduo::Buffer* buf,
+                           mynetlib::Buffer* buf,
                            Timestamp receiveTime) {
     // 调用 getMutableContext() 函数从连接对象中获取上下文信息，并使用
     // std::any_cast 将其转换为 HttpContext 类型的指针 context
@@ -105,7 +105,7 @@ void HttpServer::onRequest(const TcpConnectionPtr& conn,
     // 调用 httpCallback_ 函数，将请求对象 req 和响应对象 response
     // 作为参数，用于处理 HTTP 请求并生成相应的响应。
     httpCallback_(req, &response);
-    mymuduo::Buffer buf;
+    mynetlib::Buffer buf;
     // 创建一个 Buffer 对象 buf，并调用 response 的 appendToBuffer()
     // 函数，将响应内容添加到 buf 中
     response.appendToBuffer(&buf);

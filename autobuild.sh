@@ -7,36 +7,34 @@ if [ ! -d `pwd`/build ]; then
     mkdir `pwd`/build
 fi
 
+# 把头文件拷贝到 /usr/include/mynetlib，因为/usr/include头文件太多
+# so库拷贝到 /usr/lib    这些默认是系统的PATH
+if [ ! -d /usr/local/include/mynetlib ]; then   
+    mkdir /usr/local/include/mynetlib
+fi
+
+if [ ! -d ./include ]; then 
+    mkdir ./include
+fi
+
+
 rm -rf `pwd`/build/* 
 
 cd `pwd`/build &&
     cmake .. &&
-    make
+    make install
 
 # 回到项目根目录
 cd ..
 
-# 把头文件拷贝到 /usr/include/mymuduo，因为/usr/include头文件太多
-# so库拷贝到 /usr/lib    这些默认是系统的PATH
-if [ ! -d /usr/include/mymuduo ]; then   
-    mkdir /usr/include/mymuduo
-fi
+cp `pwd`/include/* -r /usr/local/include/mynetlib
 
-for header in `ls *.h`
-do
-    cp $header /usr/include/mymuduo
-done
-
-# if [ ! -d ./include ]; then 
-#     mkdir ./include
-# fi
+cp `pwd`/lib/libmynetlib.so /usr/local/lib
 
 # for header in `ls ./*.h`
 # do
 #     cp $header ./include 
 # done
-
-cp `pwd`/lib/libmymuduo.so /usr/lib
 
 # 刷新动态库缓存，链接库如果找不到
 ldconfig

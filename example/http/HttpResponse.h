@@ -1,10 +1,10 @@
 #pragma once
 
-#include <mymuduo/Buffer.h>
+#include <mynetlib/Buffer.h>
 
 #include <map>
 
-using namespace mymuduo;
+using namespace mynetlib;
 
 class Buffer;
 class HttpResponse {
@@ -52,7 +52,7 @@ public:
     void setBody(const std::string& body) { body_ = body; }
 
     // 将响应的内容追加到缓冲区中
-    void appendToBuffer(mymuduo::Buffer* output) const;
+    void appendToBuffer(mynetlib::Buffer* output) const;
 
 private:
     std::map<std::string, std::string> headers_;

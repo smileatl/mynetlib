@@ -1,13 +1,13 @@
 
 #include "HttpResponse.h"
-#include <mymuduo/Buffer.h>
+#include <mynetlib/Buffer.h>
 
 #include <stdio.h>
 
-// using namespace mymuduo;
+// using namespace mynetlib;
 
 // 用于将HTTP响应的内容追加到指定的缓冲区中
-void HttpResponse::appendToBuffer(mymuduo::Buffer* output) const {
+void HttpResponse::appendToBuffer(mynetlib::Buffer* output) const {
     char buf[32];
     // 创建一个大小为 32 的字符数组 buf，并使用 snprintf()
     // 函数将状态码转换为字符串形式，并拼接到输出缓冲区 output 中

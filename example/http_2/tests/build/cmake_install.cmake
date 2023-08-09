@@ -1,4 +1,4 @@
-# Install script for directory: /home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/tests
+# Install script for directory: /home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lsl/Desktop/code/Project/MyMuduo/mymuduo/example/http_2/tests/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

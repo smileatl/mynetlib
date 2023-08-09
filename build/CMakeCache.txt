@@ -149,7 +149,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=mymuduo
+CMAKE_PROJECT_NAME:STATIC=mynetlib
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -220,10 +220,13 @@ EXECUTABLE_OUTPUT_PATH:PATH=
 LIBRARY_OUTPUT_PATH:PATH=
 
 //Value Computed by CMake
-mymuduo_BINARY_DIR:STATIC=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build
+mynetlib_BINARY_DIR:STATIC=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build
+
+//Dependencies for the target
+mynetlib_LIB_DEPENDS:STATIC=general;pthread;general;mysqlclient;
 
 //Value Computed by CMake
-mymuduo_SOURCE_DIR:STATIC=/home/lsl/Desktop/code/project/mynetlib/mynetlib
+mynetlib_SOURCE_DIR:STATIC=/home/lsl/Desktop/code/project/mynetlib/mynetlib
 
 
 ########################
@@ -330,7 +333,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

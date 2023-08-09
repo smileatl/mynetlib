@@ -1,7 +1,7 @@
-#include <mymuduo/Buffer.h>
+#include <mynetlib/Buffer.h>
 #include "HttpContext.h"
 
-// using namespace mymuduo;
+// using namespace mynetlib;
 
 // 解析和处理 HTTP 请求行，并将解析得到的方法、路径、查询字符串和版本信息设置到 request_ 对象中。这是解析完整的 HTTP 请求的关键步骤之一。
 bool HttpContext::processRequestLine(const char* begin, const char* end) {
@@ -50,7 +50,7 @@ bool HttpContext::processRequestLine(const char* begin, const char* end) {
 
 // return false if any error
 // 逐步解析和处理 HTTP 请求的不同部分，包括请求行、头部字段和正文。它使用 Buffer 类提供的功能来操作缓冲区，同时利用 processRequestLine() 和相关函数来解析和保存请求的相关信息。这是一个典型的基于缓冲区的逐行解析方式。
-bool HttpContext::parseRequest(mymuduo::Buffer* buf, Timestamp receiveTime) {
+bool HttpContext::parseRequest(mynetlib::Buffer* buf, Timestamp receiveTime) {
     bool ok = true;
     bool hasMore = true;
     // 循环，直到处理完所有请求部分或出现错误。

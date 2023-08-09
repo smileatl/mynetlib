@@ -1,13 +1,13 @@
 #pragma once
 
-#include <mymuduo/Timestamp.h>
+#include <mynetlib/Timestamp.h>
 
 #include <assert.h>
 #include <stdio.h>
 #include <map>
 #include <string>
 
-using namespace mymuduo;
+using namespace mynetlib;
 
 class HttpRequest {
 public:

@@ -6,18 +6,18 @@
 
 #IncludeRegexTransform: 
 
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.cc
-mymuduo/Buffer.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.cc
+mynetlib/Buffer.h
 -
 HttpContext.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.h
 
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.h
 HttpRequest.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpRequest.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpRequest.h
 
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpRequest.h
-mymuduo/Timestamp.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpRequest.h
+mynetlib/Timestamp.h
 -
 assert.h
 -
@@ -28,49 +28,49 @@ map
 string
 -
 
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.cc
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.cc
 HttpResponse.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.h
-mymuduo/Buffer.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.h
+mynetlib/Buffer.h
 -
 stdio.h
 -
 
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.h
-mymuduo/Buffer.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.h
+mynetlib/Buffer.h
 -
 map
 -
 
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.cc
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.cc
 HttpServer.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.h
-mymuduo/Logger.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.h
+mynetlib/Logger.h
 -
 HttpContext.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.h
 HttpRequest.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpRequest.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpRequest.h
 HttpResponse.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.h
 
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.h
-mymuduo/TcpServer.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.h
+mynetlib/TcpServer.h
 -
-mymuduo/noncopyable.h
+mynetlib/noncopyable.h
 -
 
-/home/lsl/Desktop/code/project/mynetlib/example/http/tests/HttpServer_test.cc
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/HttpServer_test.cc
 ../HttpServer.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.h
-mymuduo/EventLoop.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.h
+mynetlib/EventLoop.h
 -
-mymuduo/Logger.h
+mynetlib/Logger.h
 -
 ../HttpRequest.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpRequest.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpRequest.h
 ../HttpResponse.h
-/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.h
 iostream
 -
 map

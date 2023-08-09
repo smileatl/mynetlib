@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lsl/Desktop/code/project/mynetlib/example/http/tests
+CMAKE_SOURCE_DIR = /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build
+CMAKE_BINARY_DIR = /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/httptest.dir/depend.make
@@ -59,73 +59,73 @@ include CMakeFiles/httptest.dir/flags.make
 
 CMakeFiles/httptest.dir/HttpServer_test.o: CMakeFiles/httptest.dir/flags.make
 CMakeFiles/httptest.dir/HttpServer_test.o: ../HttpServer_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/httptest.dir/HttpServer_test.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httptest.dir/HttpServer_test.o -c /home/lsl/Desktop/code/project/mynetlib/example/http/tests/HttpServer_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/httptest.dir/HttpServer_test.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httptest.dir/HttpServer_test.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/HttpServer_test.cc
 
 CMakeFiles/httptest.dir/HttpServer_test.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httptest.dir/HttpServer_test.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/example/http/tests/HttpServer_test.cc > CMakeFiles/httptest.dir/HttpServer_test.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/HttpServer_test.cc > CMakeFiles/httptest.dir/HttpServer_test.i
 
 CMakeFiles/httptest.dir/HttpServer_test.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httptest.dir/HttpServer_test.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/example/http/tests/HttpServer_test.cc -o CMakeFiles/httptest.dir/HttpServer_test.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/HttpServer_test.cc -o CMakeFiles/httptest.dir/HttpServer_test.s
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o: CMakeFiles/httptest.dir/flags.make
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o: /home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o -c /home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.cc
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.o: CMakeFiles/httptest.dir/flags.make
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.o: /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.cc
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.cc > CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.i
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.cc > CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.i
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.cc -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.s
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.cc -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.s
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o: CMakeFiles/httptest.dir/flags.make
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o: /home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o -c /home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.cc
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.o: CMakeFiles/httptest.dir/flags.make
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.o: /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.cc
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.cc > CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.i
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.cc > CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.i
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.cc -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.s
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.cc -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.s
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o: CMakeFiles/httptest.dir/flags.make
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o: /home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o -c /home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.cc
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.o: CMakeFiles/httptest.dir/flags.make
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.o: /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.cc
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.cc > CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.i
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.cc > CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.i
 
-CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.cc -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.s
+CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.cc -o CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.s
 
 # Object files for target httptest
 httptest_OBJECTS = \
 "CMakeFiles/httptest.dir/HttpServer_test.o" \
-"CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o" \
-"CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o" \
-"CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o"
+"CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.o" \
+"CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.o" \
+"CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.o"
 
 # External object files for target httptest
 httptest_EXTERNAL_OBJECTS =
 
 httptest: CMakeFiles/httptest.dir/HttpServer_test.o
-httptest: CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpContext.o
-httptest: CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpResponse.o
-httptest: CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/example/http/HttpServer.o
+httptest: CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpContext.o
+httptest: CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpResponse.o
+httptest: CMakeFiles/httptest.dir/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/HttpServer.o
 httptest: CMakeFiles/httptest.dir/build.make
 httptest: CMakeFiles/httptest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable httptest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable httptest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/httptest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/httptest.dir/clean:
 .PHONY : CMakeFiles/httptest.dir/clean
 
 CMakeFiles/httptest.dir/depend:
-	cd /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lsl/Desktop/code/project/mynetlib/example/http/tests /home/lsl/Desktop/code/project/mynetlib/example/http/tests /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build /home/lsl/Desktop/code/project/mynetlib/example/http/tests/build/CMakeFiles/httptest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build /home/lsl/Desktop/code/project/mynetlib/mynetlib/example/http/tests/build/CMakeFiles/httptest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/httptest.dir/depend
 

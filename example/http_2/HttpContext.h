@@ -2,7 +2,7 @@
 
 #include "HttpRequest.h"
 
-using namespace mymuduo;
+using namespace mynetlib;
 
 class Buffer;
 
@@ -24,7 +24,7 @@ public:
     // return false if any error
     // 解析请求的函数。接受一个指向 Buffer 对象的指针 buf
     // 和一个时间戳receiveTime，并根据缓冲区中的数据解析出一个完整的请求。返回值表示解析是否成功。
-    bool parseRequest(mymuduo::Buffer* buf, Timestamp receiveTime);
+    bool parseRequest(mynetlib::Buffer* buf, Timestamp receiveTime);
 
     // 判断是否已经接收到完整的请求
     bool gotAll() const { return state_ == kGotAll; }
