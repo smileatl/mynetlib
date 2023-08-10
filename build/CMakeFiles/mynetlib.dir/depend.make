@@ -15,11 +15,13 @@ CMakeFiles/mynetlib.dir/src/Buffer.o: ../src/Buffer.h
 
 CMakeFiles/mynetlib.dir/src/Callbacks.o: ../src/Callbacks.cc
 
+CMakeFiles/mynetlib.dir/src/Channel.o: ../src/Callbacks.h
 CMakeFiles/mynetlib.dir/src/Channel.o: ../src/Channel.cc
 CMakeFiles/mynetlib.dir/src/Channel.o: ../src/Channel.h
 CMakeFiles/mynetlib.dir/src/Channel.o: ../src/CurrentThread.h
 CMakeFiles/mynetlib.dir/src/Channel.o: ../src/EventLoop.h
 CMakeFiles/mynetlib.dir/src/Channel.o: ../src/Logger.h
+CMakeFiles/mynetlib.dir/src/Channel.o: ../src/TimerId.h
 CMakeFiles/mynetlib.dir/src/Channel.o: ../src/Timestamp.h
 CMakeFiles/mynetlib.dir/src/Channel.o: ../src/noncopyable.h
 
@@ -44,21 +46,26 @@ CMakeFiles/mynetlib.dir/src/EPollPoller.o: ../src/Poller.h
 CMakeFiles/mynetlib.dir/src/EPollPoller.o: ../src/Timestamp.h
 CMakeFiles/mynetlib.dir/src/EPollPoller.o: ../src/noncopyable.h
 
+CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/Callbacks.h
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/Channel.h
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/CurrentThread.h
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/EventLoop.cc
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/EventLoop.h
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/Logger.h
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/Poller.h
+CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/TimerId.h
+CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/TimerQueue.h
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/Timestamp.h
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/noncopyable.h
 
+CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/Callbacks.h
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/CountDownLatch.h
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/CurrentThread.h
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/EventLoop.h
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/EventLoopThread.cc
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/EventLoopThread.h
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/Thread.h
+CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/TimerId.h
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/Timestamp.h
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/noncopyable.h
 
@@ -101,6 +108,7 @@ CMakeFiles/mynetlib.dir/src/TcpConnection.o: ../src/Logger.h
 CMakeFiles/mynetlib.dir/src/TcpConnection.o: ../src/Socket.h
 CMakeFiles/mynetlib.dir/src/TcpConnection.o: ../src/TcpConnection.cc
 CMakeFiles/mynetlib.dir/src/TcpConnection.o: ../src/TcpConnection.h
+CMakeFiles/mynetlib.dir/src/TcpConnection.o: ../src/TimerId.h
 CMakeFiles/mynetlib.dir/src/TcpConnection.o: ../src/Timestamp.h
 CMakeFiles/mynetlib.dir/src/TcpConnection.o: ../src/noncopyable.h
 
@@ -117,6 +125,7 @@ CMakeFiles/mynetlib.dir/src/TcpServer.o: ../src/Socket.h
 CMakeFiles/mynetlib.dir/src/TcpServer.o: ../src/TcpConnection.h
 CMakeFiles/mynetlib.dir/src/TcpServer.o: ../src/TcpServer.cc
 CMakeFiles/mynetlib.dir/src/TcpServer.o: ../src/TcpServer.h
+CMakeFiles/mynetlib.dir/src/TcpServer.o: ../src/TimerId.h
 CMakeFiles/mynetlib.dir/src/TcpServer.o: ../src/Timestamp.h
 CMakeFiles/mynetlib.dir/src/TcpServer.o: ../src/noncopyable.h
 

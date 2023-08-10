@@ -11,6 +11,7 @@
 #include "Timestamp.h"
 #include "noncopyable.h"
 #include "TimerId.h"
+#include "Callbacks.h"
 
 namespace mynetlib
 {
