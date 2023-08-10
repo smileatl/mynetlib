@@ -17,6 +17,7 @@ namespace mynetlib
 
 class Channel;
 class Poller;
+class TimerQueue;
 
 // 时间循环类  主要包含了两个大模块 Channel   Poller（epoll的抽象）
 class EventLoop : noncopyable {
@@ -60,7 +61,11 @@ public:
     std::any* getMutableContext()
     { return &context_; }
 
-
+    /******timers********/
+    TimerId runAt(Timestamp time, TimerCallback cb);
+    TimerId runAfter(double delay, TimerCallback cb);
+    TimerId runEvery(double interval, TimerCallback cb);
+    void cancel(TimerId timerId);
 
 private:
     void handleRead();  // wake up  通过给wakeupfd上写入数据，唤醒ioLoop
@@ -78,6 +83,7 @@ private:
 
     Timestamp pollReturnTime_;  // poller返回发生事件的channels的时间点
     std::unique_ptr<Poller> poller_;
+    std::unique_ptr<TimerQueue> timerQueue_;
 
     // 用了eventfd
     int wakeupFd_;  // 主要作用，当mainLoop获取一个新用户的channel，通过轮询算法选择一个subloop，通过该成员唤醒subloop处理channel
