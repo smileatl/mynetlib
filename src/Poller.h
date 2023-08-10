@@ -17,6 +17,7 @@ class EventLoop;
 // muduo库中多路事件分发器的核心IO复用模块
 class Poller:noncopyable{
 public: 
+    // Poller关注的Channel
     using ChannelList=std::vector<Channel*>;
 
     Poller(EventLoop *loop);

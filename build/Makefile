@@ -453,6 +453,36 @@ src/Thread.s:
 .PHONY : src/Thread.s
 
 # target to build an object file
+src/Timer.o:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/Timer.o
+.PHONY : src/Timer.o
+
+# target to preprocess a source file
+src/Timer.i:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/Timer.i
+.PHONY : src/Timer.i
+
+# target to generate assembly for a file
+src/Timer.s:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/Timer.s
+.PHONY : src/Timer.s
+
+# target to build an object file
+src/TimerQueue.o:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/TimerQueue.o
+.PHONY : src/TimerQueue.o
+
+# target to preprocess a source file
+src/TimerQueue.i:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/TimerQueue.i
+.PHONY : src/TimerQueue.i
+
+# target to generate assembly for a file
+src/TimerQueue.s:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/TimerQueue.s
+.PHONY : src/TimerQueue.s
+
+# target to build an object file
 src/Timestamp.o:
 	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/Timestamp.o
 .PHONY : src/Timestamp.o
@@ -565,6 +595,12 @@ help:
 	@echo "... src/Thread.o"
 	@echo "... src/Thread.i"
 	@echo "... src/Thread.s"
+	@echo "... src/Timer.o"
+	@echo "... src/Timer.i"
+	@echo "... src/Timer.s"
+	@echo "... src/TimerQueue.o"
+	@echo "... src/TimerQueue.i"
+	@echo "... src/TimerQueue.s"
 	@echo "... src/Timestamp.o"
 	@echo "... src/Timestamp.i"
 	@echo "... src/Timestamp.s"

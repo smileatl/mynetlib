@@ -40,7 +40,7 @@ private:
 
     // 填写活跃的channel在activeChannel(ChannelList)里边
     void fillActiveChannels(int numEvents, ChannelList *activeChannels) const;
-    // 更新channel通道对应的socket的感兴趣的时间
+    // 更新channel通道对应的socket的感兴趣的事件
     void update(int operation, Channel *channel);
 
     // 事件集合，用vector方便扩容
