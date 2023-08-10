@@ -2,6 +2,7 @@
 #include "Channel.h"
 #include "Logger.h"
 #include "Poller.h"
+#include "TimerQueue.h"
 
 #include <errno.h>
 #include <fcntl.h>

@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mynetlib.dir/src/TcpConnection.o"
   "CMakeFiles/mynetlib.dir/src/TcpServer.o"
   "CMakeFiles/mynetlib.dir/src/Thread.o"
+  "CMakeFiles/mynetlib.dir/src/Timer.o"
+  "CMakeFiles/mynetlib.dir/src/TimerQueue.o"
   "CMakeFiles/mynetlib.dir/src/Timestamp.o"
   "CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o"
   "CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o"

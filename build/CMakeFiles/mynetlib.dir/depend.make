@@ -126,6 +126,24 @@ CMakeFiles/mynetlib.dir/src/Thread.o: ../src/Thread.cc
 CMakeFiles/mynetlib.dir/src/Thread.o: ../src/Thread.h
 CMakeFiles/mynetlib.dir/src/Thread.o: ../src/noncopyable.h
 
+CMakeFiles/mynetlib.dir/src/Timer.o: ../src/Callbacks.h
+CMakeFiles/mynetlib.dir/src/Timer.o: ../src/Timer.cc
+CMakeFiles/mynetlib.dir/src/Timer.o: ../src/Timer.h
+CMakeFiles/mynetlib.dir/src/Timer.o: ../src/Timestamp.h
+CMakeFiles/mynetlib.dir/src/Timer.o: ../src/noncopyable.h
+
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/Callbacks.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/Channel.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/CurrentThread.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/EventLoop.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/Logger.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/Timer.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/TimerId.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/TimerQueue.cc
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/TimerQueue.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/Timestamp.h
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/noncopyable.h
+
 CMakeFiles/mynetlib.dir/src/Timestamp.o: ../src/Timestamp.cc
 CMakeFiles/mynetlib.dir/src/Timestamp.o: ../src/Timestamp.h
 

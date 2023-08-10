@@ -10,6 +10,7 @@
 #include "CurrentThread.h"
 #include "Timestamp.h"
 #include "noncopyable.h"
+#include "TimerId.h"
 
 namespace mynetlib
 {

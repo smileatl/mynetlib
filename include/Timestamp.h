@@ -23,10 +23,18 @@ public:
         std::swap(microSecondsSinceEpoch_, that.microSecondsSinceEpoch_);
     }
 
+    bool valid() const {return microSecondsSinceEpoch_ > 0;}
+
+    static Timestamp invalid() {return Timestamp();}
+
+
     static const int kMicroSecondsPerSecond = 1000 * 1000;
 private:
     int64_t microSecondsSinceEpoch_;
 };
+
+inline bool operator< (const Timestamp& lhs, const Timestamp& rhs)
+{ return lhs.microSecondsSinceEpoch() < rhs.microSecondsSinceEpoch(); }
 
 // 如果是重复定时任务就会对此时间戳进行增加。
 inline Timestamp addTime(Timestamp timestamp, double seconds)
