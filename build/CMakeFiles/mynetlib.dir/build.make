@@ -291,9 +291,35 @@ CMakeFiles/mynetlib.dir/src/Thread.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mynetlib.dir/src/Thread.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Thread.cc -o CMakeFiles/mynetlib.dir/src/Thread.s
 
+CMakeFiles/mynetlib.dir/src/Timer.o: CMakeFiles/mynetlib.dir/flags.make
+CMakeFiles/mynetlib.dir/src/Timer.o: ../src/Timer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mynetlib.dir/src/Timer.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Timer.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Timer.cc
+
+CMakeFiles/mynetlib.dir/src/Timer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mynetlib.dir/src/Timer.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Timer.cc > CMakeFiles/mynetlib.dir/src/Timer.i
+
+CMakeFiles/mynetlib.dir/src/Timer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mynetlib.dir/src/Timer.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Timer.cc -o CMakeFiles/mynetlib.dir/src/Timer.s
+
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: CMakeFiles/mynetlib.dir/flags.make
+CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/TimerQueue.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mynetlib.dir/src/TimerQueue.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/TimerQueue.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/TimerQueue.cc
+
+CMakeFiles/mynetlib.dir/src/TimerQueue.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mynetlib.dir/src/TimerQueue.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/TimerQueue.cc > CMakeFiles/mynetlib.dir/src/TimerQueue.i
+
+CMakeFiles/mynetlib.dir/src/TimerQueue.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mynetlib.dir/src/TimerQueue.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/TimerQueue.cc -o CMakeFiles/mynetlib.dir/src/TimerQueue.s
+
 CMakeFiles/mynetlib.dir/src/Timestamp.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Timestamp.o: ../src/Timestamp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mynetlib.dir/src/Timestamp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mynetlib.dir/src/Timestamp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Timestamp.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Timestamp.cc
 
 CMakeFiles/mynetlib.dir/src/Timestamp.i: cmake_force
@@ -306,7 +332,7 @@ CMakeFiles/mynetlib.dir/src/Timestamp.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o: ../src/mysql/ConnectionPool.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql/ConnectionPool.cc
 
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.i: cmake_force
@@ -319,7 +345,7 @@ CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o: ../src/mysql/MysqlConn.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql/MysqlConn.cc
 
 CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.i: cmake_force
@@ -350,6 +376,8 @@ mynetlib_OBJECTS = \
 "CMakeFiles/mynetlib.dir/src/TcpConnection.o" \
 "CMakeFiles/mynetlib.dir/src/TcpServer.o" \
 "CMakeFiles/mynetlib.dir/src/Thread.o" \
+"CMakeFiles/mynetlib.dir/src/Timer.o" \
+"CMakeFiles/mynetlib.dir/src/TimerQueue.o" \
 "CMakeFiles/mynetlib.dir/src/Timestamp.o" \
 "CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o" \
 "CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o"
@@ -375,12 +403,14 @@ mynetlib_EXTERNAL_OBJECTS =
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/TcpConnection.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/TcpServer.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/Thread.o
+../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/Timer.o
+../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/TimerQueue.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/Timestamp.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/build.make
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX shared library ../lib/libmynetlib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX shared library ../lib/libmynetlib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mynetlib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
