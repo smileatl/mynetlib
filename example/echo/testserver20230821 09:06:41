@@ -1,0 +1,597 @@
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=5 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=6 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=10 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=5 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=6 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=10 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=5 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=6 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=10 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:01Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:01Content:func=poll => fd total count:2 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:01Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:01Content:func=poll => fd total count:2 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:06:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:11Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:21Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:41Content:func=poll => fd total count:2 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:01Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:01Content:func=poll => fd total count:2 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:01Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:01Content:func=poll => fd total count:2 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:07:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:21Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:11Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:21Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:21Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:6000#1] from 127.0.0.1:44496 
+[INFO]Time:20230821 09:08:33Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:6000#1] at fd=18
+[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:func=updateChannel => fd=18 events=3 index=-1 
+[INFO]Time:20230821 09:08:33Content:Connection UP : 127.0.0.1:44496[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:35Content:1 events happened 
+[INFO]Time:20230821 09:08:35Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:35Content:func=poll => fd total count:3 
+tal count:2 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:6000#1] from 127.0.0.1:44496 
+[INFO]Time:20230821 09:08:33Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:6000#1] at fd=18
+[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:func=updateChannel => fd=18 events=3 index=-1 
+[INFO]Time:20230821 09:08:33Content:Connection UP : 127.0.0.1:44496[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:43Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:45Content:func=poll => fd total count:3 
+0230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:6000#1] from 127.0.0.1:44496 
+[INFO]Time:20230821 09:08:33Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:6000#1] at fd=18
+[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:func=updateChannel => fd=18 events=3 index=-1 
+[INFO]Time:20230821 09:08:33Content:Connection UP : 127.0.0.1:44496[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:43Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:51Content:func=poll => fd total count:2 
+230821 09:08:33Content:TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:6000#1] from 127.0.0.1:44496 
+[INFO]Time:20230821 09:08:33Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:6000#1] at fd=18
+[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:func=updateChannel => fd=18 events=3 index=-1 
+[INFO]Time:20230821 09:08:33Content:Connection UP : 127.0.0.1:44496[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:53Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:55Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:43Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:51Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:51Content:func=poll => fd total count:2 
+230821 09:08:33Content:TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:6000#1] from 127.0.0.1:44496 
+[INFO]Time:20230821 09:08:33Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:6000#1] at fd=18
+[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:func=updateChannel => fd=18 events=3 index=-1 
+[INFO]Time:20230821 09:08:33Content:Connection UP : 127.0.0.1:44496[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:09:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:09:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:43Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:09:03Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:51Content:func=poll => fd total count:2 
+230821 09:08:33Content:TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:6000#1] from 127.0.0.1:44496 
+[INFO]Time:20230821 09:08:33Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:6000#1] at fd=18
+[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:func=updateChannel => fd=18 events=3 index=-1 
+[INFO]Time:20230821 09:08:33Content:Connection UP : 127.0.0.1:44496[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:09:05Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:09:01Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:08:43Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:09:03Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:51Content:func=poll => fd total count:2 
+230821 09:08:33Content:TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:6000#1] from 127.0.0.1:44496 
+[INFO]Time:20230821 09:08:33Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:6000#1] at fd=18
+[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:33Content:1 events happened 
+[INFO]Time:20230821 09:08:33Content:channel handleEvent revents:1
+[INFO]Time:20230821 09:08:33Content:func=updateChannel => fd=18 events=3 index=-1 
+[INFO]Time:20230821 09:08:33Content:Connection UP : 127.0.0.1:44496[INFO]Time:20230821 09:08:33Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:09:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:09:11Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:09:13Content:func=poll => fd total count:3 
+[INFO]Time:20230821 09:08:31Content:func=poll => fd total count:3 
+9:06:41Content:func=updateChannel => fd=11 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4ce173c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=13 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=14 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd972c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=16 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=17 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ff4cd171c10 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:2 
+[INFO]Time:20230821 09:06:41Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 09:06:41Content:EventLoop 0x7ffc06ea2a40 start looping 
+[INFO]Time:20230821 09:06:41Content:func=poll => fd total count:3 

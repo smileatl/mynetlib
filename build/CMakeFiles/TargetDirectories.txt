@@ -12,3 +12,10 @@
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/mysql/test/CMakeFiles/edit_cache.dir
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/mysql/test/CMakeFiles/install/local.dir
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/mysql/test/CMakeFiles/MysqlPoolTest.dir
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/memory/test/CMakeFiles/install/strip.dir
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/memory/test/CMakeFiles/install/local.dir
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/memory/test/CMakeFiles/install.dir
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/memory/test/CMakeFiles/list_install_components.dir
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/memory/test/CMakeFiles/rebuild_cache.dir
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/memory/test/CMakeFiles/edit_cache.dir
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/memory/test/CMakeFiles/MemoryPoolTest.dir

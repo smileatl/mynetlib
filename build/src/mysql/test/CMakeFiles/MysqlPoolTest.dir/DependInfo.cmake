@@ -12,11 +12,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src"
   "../src/mysql"
+  "../src/memory"
   "../src/mysql/test/.."
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles/mynetlib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

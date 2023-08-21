@@ -1,1 +1,1 @@
-/usr/bin/c++   -g -std=c++17 -fPIC  -rdynamic CMakeFiles/MysqlPoolTest.dir/MysqlPoolTest.o  -o ../../../../src/mysql/test/MysqlPoolTest  -ltiny_network -lpthread 
+/usr/bin/c++   -g -std=c++17 -fPIC  -rdynamic CMakeFiles/MysqlPoolTest.dir/MysqlPoolTest.o  -o ../../../../src/mysql/test/MysqlPoolTest   -L/home/lsl/Desktop/code/project/mynetlib/mynetlib/lib  -Wl,-rpath,/home/lsl/Desktop/code/project/mynetlib/mynetlib/lib ../../../../lib/libmynetlib.so -lpthread -lmysqlclient 

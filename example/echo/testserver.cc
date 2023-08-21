@@ -51,6 +51,8 @@ private:
         } else {
             LOG_INFO("Connection DOWN : %s",
                      conn->peerAddress().toIpPort().c_str());
+            // conn->shutdown();
+
         }
     }
 
@@ -73,12 +75,12 @@ private:
 };
 
 int main(int argc, char** argv) {
-    // char name[256] = { '\0' };
-    // strncpy(name, argv[0], sizeof name - 1);
-    // AsyncLogging log(::basename(name), kRollSize);
-    // log.start();
-    // g_asyncLog = &log;
-    // Logger::setOutPut(asyncOutput);
+    char name[256] = { '\0' };
+    strncpy(name, argv[0], sizeof name - 1);
+    AsyncLogging log(::basename(name), kRollSize);
+    log.start();
+    g_asyncLog = &log;
+    Logger::setOutPut(asyncOutput);
 
     // 这个EventLoop就是main
     // EventLoop，即负责循环事件监听处理新用户连接事件的事件循环器。

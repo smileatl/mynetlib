@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -std=c++17 -fPIC  -rdynamic CMakeFiles/MemoryPoolTest.dir/MemoryPoolTest.o  -o ../../../../src/memory/test/MemoryPoolTest   -L/home/lsl/Desktop/code/project/mynetlib/mynetlib/lib  -Wl,-rpath,/home/lsl/Desktop/code/project/mynetlib/mynetlib/lib ../../../../lib/libmynetlib.so -lpthread -lmysqlclient 

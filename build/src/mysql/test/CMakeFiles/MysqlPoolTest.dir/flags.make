@@ -6,5 +6,5 @@ CXX_FLAGS =  -g -std=c++17 -fPIC
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lsl/Desktop/code/project/mynetlib/mynetlib/src -I/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql -I/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql/test/.. 
+CXX_INCLUDES = -I/home/lsl/Desktop/code/project/mynetlib/mynetlib/src -I/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql -I/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/memory -I/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql/test/.. 
 

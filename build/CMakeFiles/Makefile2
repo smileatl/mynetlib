@@ -55,19 +55,40 @@ CMAKE_BINARY_DIR = /home/lsl/Desktop/code/project/mynetlib/mynetlib/build
 # The main recursive "all" target.
 all: CMakeFiles/mynetlib.dir/all
 all: src/mysql/test/all
+all: src/memory/test/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/mysql/test/preinstall
+preinstall: src/memory/test/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/mynetlib.dir/clean
 clean: src/mysql/test/clean
+clean: src/memory/test/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/memory/test
+
+# Recursive "all" directory target.
+src/memory/test/all: src/memory/test/CMakeFiles/MemoryPoolTest.dir/all
+
+.PHONY : src/memory/test/all
+
+# Recursive "preinstall" directory target.
+src/memory/test/preinstall:
+
+.PHONY : src/memory/test/preinstall
+
+# Recursive "clean" directory target.
+src/memory/test/clean: src/memory/test/CMakeFiles/MemoryPoolTest.dir/clean
+
+.PHONY : src/memory/test/clean
 
 #=============================================================================
 # Directory level rules for directory src/mysql/test
@@ -94,12 +115,12 @@ src/mysql/test/clean: src/mysql/test/CMakeFiles/MysqlPoolTest.dir/clean
 CMakeFiles/mynetlib.dir/all:
 	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/depend
 	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target mynetlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target mynetlib"
 .PHONY : CMakeFiles/mynetlib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mynetlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mynetlib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles 0
 .PHONY : CMakeFiles/mynetlib.dir/rule
@@ -118,15 +139,15 @@ CMakeFiles/mynetlib.dir/clean:
 # Target rules for target src/mysql/test/CMakeFiles/MysqlPoolTest.dir
 
 # All Build rule for target.
-src/mysql/test/CMakeFiles/MysqlPoolTest.dir/all:
+src/mysql/test/CMakeFiles/MysqlPoolTest.dir/all: CMakeFiles/mynetlib.dir/all
 	$(MAKE) -f src/mysql/test/CMakeFiles/MysqlPoolTest.dir/build.make src/mysql/test/CMakeFiles/MysqlPoolTest.dir/depend
 	$(MAKE) -f src/mysql/test/CMakeFiles/MysqlPoolTest.dir/build.make src/mysql/test/CMakeFiles/MysqlPoolTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=1,2 "Built target MysqlPoolTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=3,4 "Built target MysqlPoolTest"
 .PHONY : src/mysql/test/CMakeFiles/MysqlPoolTest.dir/all
 
 # Build rule for subdir invocation for target.
 src/mysql/test/CMakeFiles/MysqlPoolTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 src/mysql/test/CMakeFiles/MysqlPoolTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles 0
 .PHONY : src/mysql/test/CMakeFiles/MysqlPoolTest.dir/rule
@@ -140,6 +161,33 @@ MysqlPoolTest: src/mysql/test/CMakeFiles/MysqlPoolTest.dir/rule
 src/mysql/test/CMakeFiles/MysqlPoolTest.dir/clean:
 	$(MAKE) -f src/mysql/test/CMakeFiles/MysqlPoolTest.dir/build.make src/mysql/test/CMakeFiles/MysqlPoolTest.dir/clean
 .PHONY : src/mysql/test/CMakeFiles/MysqlPoolTest.dir/clean
+
+#=============================================================================
+# Target rules for target src/memory/test/CMakeFiles/MemoryPoolTest.dir
+
+# All Build rule for target.
+src/memory/test/CMakeFiles/MemoryPoolTest.dir/all: CMakeFiles/mynetlib.dir/all
+	$(MAKE) -f src/memory/test/CMakeFiles/MemoryPoolTest.dir/build.make src/memory/test/CMakeFiles/MemoryPoolTest.dir/depend
+	$(MAKE) -f src/memory/test/CMakeFiles/MemoryPoolTest.dir/build.make src/memory/test/CMakeFiles/MemoryPoolTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=1,2 "Built target MemoryPoolTest"
+.PHONY : src/memory/test/CMakeFiles/MemoryPoolTest.dir/all
+
+# Build rule for subdir invocation for target.
+src/memory/test/CMakeFiles/MemoryPoolTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles 28
+	$(MAKE) -f CMakeFiles/Makefile2 src/memory/test/CMakeFiles/MemoryPoolTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles 0
+.PHONY : src/memory/test/CMakeFiles/MemoryPoolTest.dir/rule
+
+# Convenience name for target.
+MemoryPoolTest: src/memory/test/CMakeFiles/MemoryPoolTest.dir/rule
+
+.PHONY : MemoryPoolTest
+
+# clean rule for target.
+src/memory/test/CMakeFiles/MemoryPoolTest.dir/clean:
+	$(MAKE) -f src/memory/test/CMakeFiles/MemoryPoolTest.dir/build.make src/memory/test/CMakeFiles/MemoryPoolTest.dir/clean
+.PHONY : src/memory/test/CMakeFiles/MemoryPoolTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

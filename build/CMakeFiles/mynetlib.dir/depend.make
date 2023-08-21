@@ -164,6 +164,9 @@ CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/noncopyable.h
 CMakeFiles/mynetlib.dir/src/Timestamp.o: ../src/Timestamp.cc
 CMakeFiles/mynetlib.dir/src/Timestamp.o: ../src/Timestamp.h
 
+CMakeFiles/mynetlib.dir/src/memory/MemoryPool.o: ../src/memory/MemoryPool.cc
+CMakeFiles/mynetlib.dir/src/memory/MemoryPool.o: ../src/memory/MemoryPool.h
+
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o: ../src/mysql/ConnectionPool.cc
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o: ../src/mysql/ConnectionPool.h
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o: ../src/mysql/MysqlConn.h

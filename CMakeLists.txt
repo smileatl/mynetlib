@@ -8,10 +8,13 @@ project(mynetlib)
 # 添加搜索路径
 include_directories(${PROJECT_SOURCE_DIR}/src)
 include_directories(${PROJECT_SOURCE_DIR}/src/mysql)
+include_directories(${PROJECT_SOURCE_DIR}/src/memory)
 
 # 定义参与编译的源代码文件
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/mysql SRC_MYSQL)
+aux_source_directory(${PROJECT_SOURCE_DIR}/src/memory SRC_MEMORY)
+
 
 # cmake=》makefile make，如果添加了新文件，需要重新cmake产生makefile，才能让新文件参与到编译
 # 需要cmake文件右键清理所有项目并重新配置，然后清理所有项目重新生成
@@ -22,11 +25,10 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++17 -fPIC")
 
 # 编译生成动态库mynetlib
-add_library(mynetlib SHARED ${SRC_LIST} ${SRC_MYSQL})
+add_library(mynetlib SHARED ${SRC_LIST} ${SRC_MYSQL} ${SRC_MEMORY})
 
 # 目标动态库所需连接的库（这里需要连接libpthread.so）
 target_link_libraries(mynetlib pthread mysqlclient)
-
 
 # 设置安装的默认路径
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
@@ -37,6 +39,7 @@ install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/ DESTINATION include FILES_MATCHING 
 # 最终生成libmuduo.so
 
 add_subdirectory(src/mysql/test)
+add_subdirectory(src/memory/test)
 
 
 

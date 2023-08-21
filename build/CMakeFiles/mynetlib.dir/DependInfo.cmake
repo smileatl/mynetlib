@@ -26,6 +26,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Timer.cc" "/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles/mynetlib.dir/src/Timer.o"
   "/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/TimerQueue.cc" "/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles/mynetlib.dir/src/TimerQueue.o"
   "/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Timestamp.cc" "/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles/mynetlib.dir/src/Timestamp.o"
+  "/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/memory/MemoryPool.cc" "/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles/mynetlib.dir/src/memory/MemoryPool.o"
   "/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql/ConnectionPool.cc" "/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o"
   "/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql/MysqlConn.cc" "/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o"
   )
@@ -40,6 +41,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src"
   "../src/mysql"
+  "../src/memory"
   )
 
 # Targets to which this target links.

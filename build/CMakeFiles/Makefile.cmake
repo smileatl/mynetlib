@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
+  "../src/memory/test/CMakeLists.txt"
   "../src/mysql/test/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c"
@@ -114,10 +115,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/mysql/test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/memory/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mynetlib.dir/DependInfo.cmake"
   "src/mysql/test/CMakeFiles/MysqlPoolTest.dir/DependInfo.cmake"
+  "src/memory/test/CMakeFiles/MemoryPoolTest.dir/DependInfo.cmake"
   )

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/memory/MemoryPool.h
+
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/memory/test/MemoryPoolTest.cc
+MemoryPool.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/src/memory/test/MemoryPool.h
+iostream
+-
+vector
+-
+chrono
+-
+stdio.h
+-
+stdlib.h
+-
+

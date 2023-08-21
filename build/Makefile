@@ -182,6 +182,19 @@ MysqlPoolTest/fast:
 	$(MAKE) -f src/mysql/test/CMakeFiles/MysqlPoolTest.dir/build.make src/mysql/test/CMakeFiles/MysqlPoolTest.dir/build
 .PHONY : MysqlPoolTest/fast
 
+#=============================================================================
+# Target rules for targets named MemoryPoolTest
+
+# Build rule for target.
+MemoryPoolTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MemoryPoolTest
+.PHONY : MemoryPoolTest
+
+# fast build rule for target.
+MemoryPoolTest/fast:
+	$(MAKE) -f src/memory/test/CMakeFiles/MemoryPoolTest.dir/build.make src/memory/test/CMakeFiles/MemoryPoolTest.dir/build
+.PHONY : MemoryPoolTest/fast
+
 # target to build an object file
 src/Acceptor.o:
 	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/Acceptor.o
@@ -513,6 +526,21 @@ src/Timestamp.s:
 .PHONY : src/Timestamp.s
 
 # target to build an object file
+src/memory/MemoryPool.o:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/memory/MemoryPool.o
+.PHONY : src/memory/MemoryPool.o
+
+# target to preprocess a source file
+src/memory/MemoryPool.i:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/memory/MemoryPool.i
+.PHONY : src/memory/MemoryPool.i
+
+# target to generate assembly for a file
+src/memory/MemoryPool.s:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/memory/MemoryPool.s
+.PHONY : src/memory/MemoryPool.s
+
+# target to build an object file
 src/mysql/ConnectionPool.o:
 	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o
 .PHONY : src/mysql/ConnectionPool.o
@@ -556,6 +584,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... mynetlib"
 	@echo "... MysqlPoolTest"
+	@echo "... MemoryPoolTest"
 	@echo "... src/Acceptor.o"
 	@echo "... src/Acceptor.i"
 	@echo "... src/Acceptor.s"
@@ -622,6 +651,9 @@ help:
 	@echo "... src/Timestamp.o"
 	@echo "... src/Timestamp.i"
 	@echo "... src/Timestamp.s"
+	@echo "... src/memory/MemoryPool.o"
+	@echo "... src/memory/MemoryPool.i"
+	@echo "... src/memory/MemoryPool.s"
 	@echo "... src/mysql/ConnectionPool.o"
 	@echo "... src/mysql/ConnectionPool.i"
 	@echo "... src/mysql/ConnectionPool.s"

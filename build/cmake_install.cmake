@@ -44,6 +44,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/mysql/test/cmake_install.cmake")
+  include("/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/src/memory/test/cmake_install.cmake")
 
 endif()
 
