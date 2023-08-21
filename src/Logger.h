@@ -134,6 +134,7 @@ public:
 private:
     // _logLevel; 和系统的变量不产生冲突
     int logLevel_;
+    Logger(){}
 };
 
 }  // namespace mynetlib

@@ -56,7 +56,7 @@ private:
         else
         {
             LOG_INFO("conn DOWN : %s", conn->peerAddress().toIpPort().c_str());
-            conn->shutdown();
+            // conn->shutdown();
         }
 
     }
