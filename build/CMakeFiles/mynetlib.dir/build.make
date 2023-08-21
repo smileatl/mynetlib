@@ -70,9 +70,22 @@ CMakeFiles/mynetlib.dir/src/Acceptor.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mynetlib.dir/src/Acceptor.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Acceptor.cc -o CMakeFiles/mynetlib.dir/src/Acceptor.s
 
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: CMakeFiles/mynetlib.dir/flags.make
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: ../src/AsyncLogging.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mynetlib.dir/src/AsyncLogging.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/AsyncLogging.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/AsyncLogging.cc
+
+CMakeFiles/mynetlib.dir/src/AsyncLogging.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mynetlib.dir/src/AsyncLogging.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/AsyncLogging.cc > CMakeFiles/mynetlib.dir/src/AsyncLogging.i
+
+CMakeFiles/mynetlib.dir/src/AsyncLogging.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mynetlib.dir/src/AsyncLogging.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/AsyncLogging.cc -o CMakeFiles/mynetlib.dir/src/AsyncLogging.s
+
 CMakeFiles/mynetlib.dir/src/Buffer.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Buffer.o: ../src/Buffer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mynetlib.dir/src/Buffer.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mynetlib.dir/src/Buffer.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Buffer.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Buffer.cc
 
 CMakeFiles/mynetlib.dir/src/Buffer.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/mynetlib.dir/src/Buffer.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/Callbacks.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Callbacks.o: ../src/Callbacks.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mynetlib.dir/src/Callbacks.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mynetlib.dir/src/Callbacks.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Callbacks.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Callbacks.cc
 
 CMakeFiles/mynetlib.dir/src/Callbacks.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/mynetlib.dir/src/Callbacks.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/Channel.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Channel.o: ../src/Channel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mynetlib.dir/src/Channel.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mynetlib.dir/src/Channel.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Channel.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Channel.cc
 
 CMakeFiles/mynetlib.dir/src/Channel.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/mynetlib.dir/src/Channel.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/CoutDownLatch.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/CoutDownLatch.o: ../src/CoutDownLatch.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mynetlib.dir/src/CoutDownLatch.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mynetlib.dir/src/CoutDownLatch.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/CoutDownLatch.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/CoutDownLatch.cc
 
 CMakeFiles/mynetlib.dir/src/CoutDownLatch.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/mynetlib.dir/src/CoutDownLatch.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/CurrentThread.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/CurrentThread.o: ../src/CurrentThread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mynetlib.dir/src/CurrentThread.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mynetlib.dir/src/CurrentThread.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/CurrentThread.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/CurrentThread.cc
 
 CMakeFiles/mynetlib.dir/src/CurrentThread.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/mynetlib.dir/src/CurrentThread.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/DefaulPoller.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/DefaulPoller.o: ../src/DefaulPoller.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mynetlib.dir/src/DefaulPoller.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mynetlib.dir/src/DefaulPoller.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/DefaulPoller.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/DefaulPoller.cc
 
 CMakeFiles/mynetlib.dir/src/DefaulPoller.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/mynetlib.dir/src/DefaulPoller.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/EPollPoller.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/EPollPoller.o: ../src/EPollPoller.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mynetlib.dir/src/EPollPoller.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mynetlib.dir/src/EPollPoller.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/EPollPoller.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/EPollPoller.cc
 
 CMakeFiles/mynetlib.dir/src/EPollPoller.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/mynetlib.dir/src/EPollPoller.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/EventLoop.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/EventLoop.o: ../src/EventLoop.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mynetlib.dir/src/EventLoop.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mynetlib.dir/src/EventLoop.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/EventLoop.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/EventLoop.cc
 
 CMakeFiles/mynetlib.dir/src/EventLoop.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/mynetlib.dir/src/EventLoop.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/EventLoopThread.o: ../src/EventLoopThread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mynetlib.dir/src/EventLoopThread.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mynetlib.dir/src/EventLoopThread.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/EventLoopThread.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/EventLoopThread.cc
 
 CMakeFiles/mynetlib.dir/src/EventLoopThread.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/mynetlib.dir/src/EventLoopThread.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/EventLoopThreadPool.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/EventLoopThreadPool.o: ../src/EventLoopThreadPool.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mynetlib.dir/src/EventLoopThreadPool.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mynetlib.dir/src/EventLoopThreadPool.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/EventLoopThreadPool.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/EventLoopThreadPool.cc
 
 CMakeFiles/mynetlib.dir/src/EventLoopThreadPool.i: cmake_force
@@ -202,7 +215,7 @@ CMakeFiles/mynetlib.dir/src/EventLoopThreadPool.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/InetAddress.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/InetAddress.o: ../src/InetAddress.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mynetlib.dir/src/InetAddress.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/mynetlib.dir/src/InetAddress.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/InetAddress.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/InetAddress.cc
 
 CMakeFiles/mynetlib.dir/src/InetAddress.i: cmake_force
@@ -215,7 +228,7 @@ CMakeFiles/mynetlib.dir/src/InetAddress.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/Logger.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Logger.o: ../src/Logger.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/mynetlib.dir/src/Logger.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mynetlib.dir/src/Logger.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Logger.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Logger.cc
 
 CMakeFiles/mynetlib.dir/src/Logger.i: cmake_force
@@ -228,7 +241,7 @@ CMakeFiles/mynetlib.dir/src/Logger.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/Poller.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Poller.o: ../src/Poller.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mynetlib.dir/src/Poller.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mynetlib.dir/src/Poller.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Poller.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Poller.cc
 
 CMakeFiles/mynetlib.dir/src/Poller.i: cmake_force
@@ -241,7 +254,7 @@ CMakeFiles/mynetlib.dir/src/Poller.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/Socket.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Socket.o: ../src/Socket.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mynetlib.dir/src/Socket.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/mynetlib.dir/src/Socket.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Socket.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Socket.cc
 
 CMakeFiles/mynetlib.dir/src/Socket.i: cmake_force
@@ -254,7 +267,7 @@ CMakeFiles/mynetlib.dir/src/Socket.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/TcpConnection.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/TcpConnection.o: ../src/TcpConnection.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/mynetlib.dir/src/TcpConnection.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mynetlib.dir/src/TcpConnection.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/TcpConnection.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/TcpConnection.cc
 
 CMakeFiles/mynetlib.dir/src/TcpConnection.i: cmake_force
@@ -267,7 +280,7 @@ CMakeFiles/mynetlib.dir/src/TcpConnection.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/TcpServer.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/TcpServer.o: ../src/TcpServer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mynetlib.dir/src/TcpServer.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mynetlib.dir/src/TcpServer.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/TcpServer.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/TcpServer.cc
 
 CMakeFiles/mynetlib.dir/src/TcpServer.i: cmake_force
@@ -280,7 +293,7 @@ CMakeFiles/mynetlib.dir/src/TcpServer.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/Thread.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Thread.o: ../src/Thread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mynetlib.dir/src/Thread.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mynetlib.dir/src/Thread.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Thread.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Thread.cc
 
 CMakeFiles/mynetlib.dir/src/Thread.i: cmake_force
@@ -293,7 +306,7 @@ CMakeFiles/mynetlib.dir/src/Thread.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/Timer.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Timer.o: ../src/Timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mynetlib.dir/src/Timer.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mynetlib.dir/src/Timer.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Timer.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Timer.cc
 
 CMakeFiles/mynetlib.dir/src/Timer.i: cmake_force
@@ -306,7 +319,7 @@ CMakeFiles/mynetlib.dir/src/Timer.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/TimerQueue.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/TimerQueue.o: ../src/TimerQueue.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mynetlib.dir/src/TimerQueue.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mynetlib.dir/src/TimerQueue.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/TimerQueue.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/TimerQueue.cc
 
 CMakeFiles/mynetlib.dir/src/TimerQueue.i: cmake_force
@@ -319,7 +332,7 @@ CMakeFiles/mynetlib.dir/src/TimerQueue.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/Timestamp.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/Timestamp.o: ../src/Timestamp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mynetlib.dir/src/Timestamp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mynetlib.dir/src/Timestamp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/Timestamp.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/Timestamp.cc
 
 CMakeFiles/mynetlib.dir/src/Timestamp.i: cmake_force
@@ -332,7 +345,7 @@ CMakeFiles/mynetlib.dir/src/Timestamp.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o: ../src/mysql/ConnectionPool.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql/ConnectionPool.cc
 
 CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.i: cmake_force
@@ -345,7 +358,7 @@ CMakeFiles/mynetlib.dir/src/mysql/ConnectionPool.s: cmake_force
 
 CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o: CMakeFiles/mynetlib.dir/flags.make
 CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o: ../src/mysql/MysqlConn.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o -c /home/lsl/Desktop/code/project/mynetlib/mynetlib/src/mysql/MysqlConn.cc
 
 CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.i: cmake_force
@@ -359,6 +372,7 @@ CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.s: cmake_force
 # Object files for target mynetlib
 mynetlib_OBJECTS = \
 "CMakeFiles/mynetlib.dir/src/Acceptor.o" \
+"CMakeFiles/mynetlib.dir/src/AsyncLogging.o" \
 "CMakeFiles/mynetlib.dir/src/Buffer.o" \
 "CMakeFiles/mynetlib.dir/src/Callbacks.o" \
 "CMakeFiles/mynetlib.dir/src/Channel.o" \
@@ -386,6 +400,7 @@ mynetlib_OBJECTS = \
 mynetlib_EXTERNAL_OBJECTS =
 
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/Acceptor.o
+../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/AsyncLogging.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/Buffer.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/Callbacks.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/Channel.o
@@ -410,7 +425,7 @@ mynetlib_EXTERNAL_OBJECTS =
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/src/mysql/MysqlConn.o
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/build.make
 ../lib/libmynetlib.so: CMakeFiles/mynetlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX shared library ../lib/libmynetlib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lsl/Desktop/code/project/mynetlib/mynetlib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX shared library ../lib/libmynetlib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mynetlib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

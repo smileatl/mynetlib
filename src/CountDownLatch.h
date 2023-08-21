@@ -6,6 +6,7 @@
 #include "noncopyable.h"
 
 
+// CountDownLatch（倒计时）：是一种常用且易用的同步手段。
 namespace mynetlib
 {
 

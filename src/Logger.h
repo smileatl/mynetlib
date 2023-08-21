@@ -1,10 +1,63 @@
 #pragma once
 
 #include <string>
+#include <cstring>
 #include "noncopyable.h"
 
-namespace mynetlib
-{
+namespace mynetlib {
+const int kSmallBuffer = 4000;
+const int kLargeBuffer = 4000 * 1000;
+
+template <int SIZE>
+class FixedBuffer : noncopyable {
+public:
+    // 初始化了成员变量cur_为data_，表示当前可写入数据的位置。
+    FixedBuffer() : cur_(data_) {
+        // setCookie(cookieStart);
+    }
+
+    ~FixedBuffer() {
+        // setCookie(cookieEnd);
+    }
+
+    // 向缓冲区中追加数据。如果缓冲区剩余空间足够容纳待写入的数据，则将数据复制到缓冲区，并更新cur_指针。
+    void append(const char* /*restrict*/ buf, size_t len) {
+        if (static_cast<size_t>(avail()) > len) {
+            ::memcpy(cur_, buf, len);
+            cur_ += len;
+        }
+    }
+
+    const char* data() const { return data_; }
+    int length() const { return static_cast<int>(cur_ - data_); }
+
+    // write to data_ directly
+    char* current() { return cur_; }
+    int avail() const { return static_cast<int>(end() - cur_); }
+    void add(size_t len) { cur_ += len; }
+
+    void reset() { cur_ = data_; }
+    void bzero() { ::bzero(data_, sizeof data_); }
+
+    // for used by GDB
+    const char* debugString();
+    //   void setCookie(void (*cookie)()) { cookie_ = cookie; }
+    // for used by unit test
+    std::string toString() const { return std::string(data_, length()); }
+
+private:
+    const char* end() const { return data_ + sizeof data_; }
+    // Must be outline function for cookies.
+    //   static void cookieStart();
+    //   static void cookieEnd();
+
+    //   void (*cookie_)();
+    char data_[SIZE];
+    char* cur_;
+};
+
+
+
 // 定义宏
 // LOG_INFO("%s %d", arg1, arg2)
 // 用宏来接受可变参, 定义大宏的时候都会用do while
@@ -73,10 +126,14 @@ public:
     void setLogLevel(int level);
     // 写日志
     void log(std::string msg);
+    using OutputFunc = void (*)(const char*, int);
+    using FlushFunc = void (*)();
+    static void setOutPut(OutputFunc);
+    static void setFlush(FlushFunc);
 
 private:
     // _logLevel; 和系统的变量不产生冲突
     int logLevel_;
 };
 
-}
+}  // namespace mynetlib

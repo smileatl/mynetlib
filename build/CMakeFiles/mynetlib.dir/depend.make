@@ -10,6 +10,14 @@ CMakeFiles/mynetlib.dir/src/Acceptor.o: ../src/Socket.h
 CMakeFiles/mynetlib.dir/src/Acceptor.o: ../src/Timestamp.h
 CMakeFiles/mynetlib.dir/src/Acceptor.o: ../src/noncopyable.h
 
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: ../src/AsyncLogging.cc
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: ../src/AsyncLogging.h
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: ../src/CountDownLatch.h
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: ../src/Logger.h
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: ../src/Thread.h
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: ../src/Timestamp.h
+CMakeFiles/mynetlib.dir/src/AsyncLogging.o: ../src/noncopyable.h
+
 CMakeFiles/mynetlib.dir/src/Buffer.o: ../src/Buffer.cc
 CMakeFiles/mynetlib.dir/src/Buffer.o: ../src/Buffer.h
 

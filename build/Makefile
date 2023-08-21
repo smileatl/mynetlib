@@ -198,6 +198,21 @@ src/Acceptor.s:
 .PHONY : src/Acceptor.s
 
 # target to build an object file
+src/AsyncLogging.o:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/AsyncLogging.o
+.PHONY : src/AsyncLogging.o
+
+# target to preprocess a source file
+src/AsyncLogging.i:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/AsyncLogging.i
+.PHONY : src/AsyncLogging.i
+
+# target to generate assembly for a file
+src/AsyncLogging.s:
+	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/AsyncLogging.s
+.PHONY : src/AsyncLogging.s
+
+# target to build an object file
 src/Buffer.o:
 	$(MAKE) -f CMakeFiles/mynetlib.dir/build.make CMakeFiles/mynetlib.dir/src/Buffer.o
 .PHONY : src/Buffer.o
@@ -544,6 +559,9 @@ help:
 	@echo "... src/Acceptor.o"
 	@echo "... src/Acceptor.i"
 	@echo "... src/Acceptor.s"
+	@echo "... src/AsyncLogging.o"
+	@echo "... src/AsyncLogging.i"
+	@echo "... src/AsyncLogging.s"
 	@echo "... src/Buffer.o"
 	@echo "... src/Buffer.i"
 	@echo "... src/Buffer.s"

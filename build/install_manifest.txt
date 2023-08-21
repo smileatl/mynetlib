@@ -7,6 +7,7 @@
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/include/noncopyable.h
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/include/Callbacks.h
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/include/Socket.h
+/home/lsl/Desktop/code/project/mynetlib/mynetlib/include/AsyncLogging.h
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/include/Logger.h
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/include/TimerId.h
 /home/lsl/Desktop/code/project/mynetlib/mynetlib/include/TcpConnection.h

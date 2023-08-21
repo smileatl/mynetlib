@@ -29,6 +29,8 @@ TcpServer::TcpServer(EventLoop* loop,
       nextConnId_(1),
       started_(0) {
     // 当有先用户连接时，会执行TcpServer::newConnection回调
+    // std::bind,将成员函数与当前对象this进行绑定
+    // 调用时相当于this.newConnection
     acceptor_->setNewConnectionCallback(std::bind(&TcpServer::newConnection, this, 
                                         std::placeholders::_1, std::placeholders::_2));
 }
@@ -57,8 +59,8 @@ void TcpServer::start() {
     {
         // 把subpool都启动起来
         // threadInitCallback_线程初始化的回调
-        threadPool_->start(threadInitCallback_);  // 启动底层的loop线程池
         // 执行 Acceptor::listen
+        threadPool_->start(threadInitCallback_);  // 启动底层的loop线程池
         loop_->runInLoop(std::bind(&Acceptor::listen, acceptor_.get()));
     }
 }

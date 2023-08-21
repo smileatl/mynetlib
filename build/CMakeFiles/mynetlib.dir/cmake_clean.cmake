@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../lib/libmynetlib.pdb"
   "../lib/libmynetlib.so"
   "CMakeFiles/mynetlib.dir/src/Acceptor.o"
+  "CMakeFiles/mynetlib.dir/src/AsyncLogging.o"
   "CMakeFiles/mynetlib.dir/src/Buffer.o"
   "CMakeFiles/mynetlib.dir/src/Callbacks.o"
   "CMakeFiles/mynetlib.dir/src/Channel.o"

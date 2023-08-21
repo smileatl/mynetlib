@@ -1,13 +1,13 @@
 
 // #include <mymuduo/Logger.h>
-#include <mymuduo/AsyncLogging.h>
-#include <mymuduo/Timestamp.h>
+#include <mynetlib/AsyncLogging.h>
+#include <mynetlib/Timestamp.h>
 
 #include <stdio.h>
 #include <sys/resource.h>
 #include <unistd.h>
 
-using namespace mymuduo;
+using namespace mynetlib;
 off_t kRollSize = 500*1000*1000;
 
 AsyncLogging* g_asyncLog = NULL;
@@ -31,7 +31,7 @@ void bench(bool longLog)
 
   for (int t = 0; t < 30; ++t)
   {
-    Timestamp start = mymuduo::Timestamp::now();
+    Timestamp start = mynetlib::Timestamp::now();
     for (int i = 0; i < kBatch; ++i)
     {
       // LOG_INFO << "Hello 0123456789" << " abcdefghijklmnopqrstuvwxyz "

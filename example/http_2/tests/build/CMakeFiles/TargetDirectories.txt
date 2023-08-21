@@ -1,3 +1,0 @@
-/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/build/CMakeFiles/rebuild_cache.dir
-/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/build/CMakeFiles/edit_cache.dir
-/home/lsl/Desktop/code/Project/mynetlib/mynetlib/example/http_2/tests/build/CMakeFiles/httptest.dir

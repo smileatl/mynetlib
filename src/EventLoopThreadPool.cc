@@ -25,7 +25,7 @@ void EventLoopThreadPool::start(const ThreadInitCallback& cb) {
         EventLoopThread* t = new EventLoopThread(cb, buf);
         // 根据开启的线程数开启相应的线程，
         threads_.push_back(std::unique_ptr<EventLoopThread>(t));
-        // 执行startLoop函数，返回loop指针，（没执行threadFunc灰调函数的话，线程会阻塞）
+        // 执行startLoop函数，返回loop指针，（没执行threadFunc回调函数的话，线程会阻塞）
         loops_.push_back(
             t->startLoop());  // 底层创建线程，绑定一个新的EventLoop，并返回该loop的地址
     }
