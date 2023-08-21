@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/echotest.dir/testserver.o  -o echotest  -lmynetlib -lpthread 
