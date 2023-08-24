@@ -1,0 +1,26 @@
+[INFO]Time:20230821 15:18:49Content:func=updateChannel => fd=5 events=3 index=-1 
+[INFO]Time:20230821 15:18:49Content:func=updateChannel => fd=6 events=3 index=-1 
+[INFO]Time:20230821 15:18:49Content:func=updateChannel => fd=7 events=3 index=-1 
+[INFO]Time:20230821 15:18:49Content:EventLoop 0x7fff4b0f71f0 start looping 
+[INFO]Time:20230821 15:18:49Content:func=poll => fd total count:3 
+[INFO]Time:20230821 15:18:57Content:1 events happened 
+[INFO]Time:20230821 15:18:57Content:channel handleEvent revents:1
+[INFO]Time:20230821 15:18:57Content:TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:8000#1] from 127.0.0.1:34764 
+[INFO]Time:20230821 15:18:57Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:8000#1] at fd=9
+[INFO]Time:20230821 15:18:57Content:func=updateChannel => fd=9 events=3 index=-1 
+[INFO]Time:20230821 15:18:57Content:conn UP : 127.0.0.1:34764[INFO]Time:20230821 15:18:57Content:func=poll => fd total count:4 
+[INFO]Time:20230821 15:19:01Content:1 events happened 
+[INFO]Time:20230821 15:19:01Content:channel handleEvent revents:1
+[INFO]Time:20230821 15:19:01Content:func=poll => fd total count:4 
+erver-01] - new connection [EchoServer-01-127.0.0.1:8000#1] from 127.0.0.1:34764 
+[INFO]Time:20230821 15:18:57Content:TcpConnection::ctor[EchoServer-01-127.0.0.1:8000#1] at fd=9
+[INFO]Time:20230821 15:18:57Content:func=updateChannel => fd=9 events=3 index=-1 
+[INFO]Time:20230821 15:18:57Content:conn UP : 127.0.0.1:34764[INFO]Time:20230821 15:18:57Content:func=poll => fd total count:4 
+[INFO]Time:20230821 15:19:05Content:1 events happened 
+[INFO]Time:20230821 15:19:05Content:channel handleEvent revents:1
+[INFO]Time:20230821 15:19:05Content:fd=9 state=2 
+[INFO]Time:20230821 15:19:05Content:func=updateChannel => fd=9 events=0 index=1 
+[INFO]Time:20230821 15:19:05Content:conn DOWN : 127.0.0.1:34764[INFO]Time:20230821 15:19:05Content:TcpServer::removeConnectionInLoop [EchoServer-01] - connection EchoServer-01-127.0.0.1:8000#1
+[INFO]Time:20230821 15:19:05Content:func=removeChannel => fd=9
+[INFO]Time:20230821 15:19:05Content:TcpConnection::dtor[EchoServer-01-127.0.0.1:8000#1] at fd=9 state=0 
+[INFO]Time:20230821 15:19:05Content:func=poll => fd total count:3 
